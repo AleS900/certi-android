@@ -4,40 +4,40 @@
 <vector
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:aapt="http://schemas.android.com/aapt"
-    android:width="223dp"
-    android:height="223dp"
-    android:viewportWidth="223"
-    android:viewportHeight="223"
+    android:width="118dp"
+    android:height="118dp"
+    android:viewportWidth="118"
+    android:viewportHeight="118"
     >
 
     <group>
 
         <clip-path
-            android:pathData="M0 0H223V223H0V0Z"
+            android:pathData="M0 0H118V118H0V0Z"
             />
 
         <group
             android:translateX="0"
             android:translateY="1"
-            android:pivotX="111.5"
-            android:pivotY="111.5"
+            android:pivotX="59"
+            android:pivotY="59"
             android:scaleX="2"
             android:scaleY="2"
             android:rotation="-90"
             >
 
             <path
-                android:pathData="M0 0V223H223V0"
+                android:pathData="M0 0V118H118V0"
                 >
 
                 <aapt:attr name="android:fillColor">
 
                     <gradient
                         android:type="linear"
-                        android:startX="55.75"
-                        android:startY="111.5"
-                        android:endX="167.25"
-                        android:endY="111.5"
+                        android:startX="29.5"
+                        android:startY="59"
+                        android:endX="88.5"
+                        android:endY="59"
                         >
 
                         <item
@@ -67,8 +67,6 @@
             </path>
 
         </group>
-
-
 
     </group>
 
