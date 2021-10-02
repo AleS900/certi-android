@@ -6,15 +6,8 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="?attr/colorOnBackground"
-    android:clipToOutline="true">
+    tools:context=".MainActivity">
 
-    <!-- logo -->
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-88dp">
 
         <TextView
             android:id="@+id/textView"
@@ -42,9 +35,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_chainStyle="packed"
             app:srcCompat="@drawable/icono" />
-
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
