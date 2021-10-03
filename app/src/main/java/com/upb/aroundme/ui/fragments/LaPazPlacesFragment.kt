@@ -25,9 +25,7 @@ class LaPazPlacesFragment: StepBaseFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         val recyclerView = view.findViewById<RecyclerView>(R.id.rvPlaceLP)
         recyclerView.adapter = laPazPlacesAdapter
-
         recyclerView.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
-
         laPazPlacesAdapter.addAll(LaPazPlacesDataSource.laPazPlacesList)
     }
 }

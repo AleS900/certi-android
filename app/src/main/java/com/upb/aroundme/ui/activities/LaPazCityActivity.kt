@@ -1,5 +1,6 @@
 package com.upb.aroundme.ui.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.upb.aroundme.R
@@ -14,6 +15,7 @@ class LaPazCityActivity : AppCompatActivity() {
         setContentView(R.layout.activity_lp_places)
 
         replaceFragment(R.id.containerLPPlacesList,laPazPlacesFragment)
+
 
     }
 

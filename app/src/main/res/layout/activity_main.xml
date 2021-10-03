@@ -5,7 +5,7 @@
     android:id="@+id/activity_main"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="?attr/colorOnBackground"
+    android:background="@color/DarkGreen"
     tools:context=".ui.activities.MainActivity">
 
 
