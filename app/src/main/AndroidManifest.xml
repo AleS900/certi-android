@@ -12,13 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AroundMe">
         <activity
+            android:name="com.upb.aroundme.ui.activities.LaPazCityActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.upb.aroundme.ui.activities.SecondActivity"
             android:name=".CitiesActivity"
             android:exported="true" />
         <activity
             android:name=".LoginActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.upb.aroundme.ui.activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
