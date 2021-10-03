@@ -1,4 +1,4 @@
-package com.upb.aroundme
+package com.upb.aroundme.ui.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,6 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.upb.aroundme.CitiesListAdapter
+import com.upb.aroundme.R
+import com.upb.aroundme.data.CitiesDataSource
+import com.upb.aroundme.ui.base.StepBaseFragment
 
 class CitiesListFragment: StepBaseFragment() {
     private val citiesListAdapter= CitiesListAdapter()

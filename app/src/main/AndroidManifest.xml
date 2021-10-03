@@ -15,11 +15,10 @@
             android:name="com.upb.aroundme.ui.activities.LaPazCityActivity"
             android:exported="true" />
         <activity
-            android:name="com.upb.aroundme.ui.activities.SecondActivity"
-            android:name=".CitiesActivity"
+            android:name=".ui.activities.CitiesActivity"
             android:exported="true" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".ui.activities.LoginActivity"
             android:exported="true" />
         <activity
             android:name="com.upb.aroundme.ui.activities.MainActivity"

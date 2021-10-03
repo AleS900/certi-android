@@ -1,11 +1,11 @@
-package com.upb.aroundme.ui
+package com.upb.aroundme.ui.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.upb.aroundme.R
-import com.upb.aroundme.StepBaseFragment
+import com.upb.aroundme.ui.base.StepBaseFragment
 
 class LoginFragment: StepBaseFragment() {
     lateinit var bttn_login: View

@@ -1,9 +1,10 @@
-package com.upb.aroundme
+package com.upb.aroundme.ui.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import com.upb.aroundme.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,7 +14,7 @@ class MainActivity : AppCompatActivity() {
 
         Handler().postDelayed( {
 
-            val intent  =  Intent(this,LoginActivity::class.java)
+            val intent  =  Intent(this, LoginActivity::class.java)
             startActivity(intent)
         },3000 )
     }

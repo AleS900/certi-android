@@ -1,4 +1,6 @@
-package com.upb.aroundme
+package com.upb.aroundme.data
+
+import com.upb.aroundme.model.City
 
 object CitiesDataSource {
     val departementsList = mutableListOf<City>(

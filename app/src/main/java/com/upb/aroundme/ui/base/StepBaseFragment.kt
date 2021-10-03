@@ -2,7 +2,7 @@ package com.upb.aroundme.ui.base
 
 import androidx.fragment.app.Fragment
 
-abstract class StepsBaseFragment: Fragment() {
+abstract class StepBaseFragment: Fragment() {
     var onSuccess: (() -> Unit)? = null
     var onError: ((error: String) -> Unit)? = null
 
