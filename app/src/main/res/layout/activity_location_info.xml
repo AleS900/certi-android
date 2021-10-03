@@ -5,52 +5,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LocationInfoActivity">
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal">
-    <ImageView
-        android:id="@+id/imageHeader"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:background="@drawable/valle"
-        android:scaleType="center"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textHeader"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="8dp"
-        android:gravity="center"
-        android:text="Valle de la Luna"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/imageHeader"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView2"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="30dp"
-        android:gravity="center"
-        android:text="Se trata de un atractivo natural de gran belleza, cuyos principales autores son el agua y el viento que, a través de sus efectos erosivos del terreno, crearon caprichosas formaciones de cono y cráteres que se asemejan a un paisaje lunar. En las montañas de alrededor de La Paz, la arcilla contiene minerales diferentes que las dota de colores variados, pasando del blanquecino al violeta con los más habituales marrones y rojizos.
+        android:orientation="horizontal">
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in congue nisi. Ut fringilla sit amet ligula id tincidunt. Integer efficitur imperdiet ipsum vel vestibulum. Ut et euismod mauris. Morbi pellentesque tellus vitae turpis luctus vulputate. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec eu porttitor quam. Cras id elit aliquet, mattis nulla ut, mattis lacus. Curabitur hendrerit libero magna.
+        <ImageView
+            android:id="@+id/imageHeader"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/valle"
+            android:scaleType="center"
+            app:layout_constraintTop_toTopOf="parent" />
 
-Ut commodo aliquet nunc. Etiam aliquam, felis sit amet commodo mattis, diam mauris volutpat massa, a malesuada ipsum sapien id ligula. Duis volutpat urna quis velit pharetra mattis. Mauris finibus eu lorem nec sagittis. Nulla odio sapien, facilisis a fringilla et, consequat et sapien. Praesent ornare metus non hendrerit cursus. Nam augue odio, pellentesque ac varius ac, maximus in purus. Vestibulum pretium cursus bibendum. Vivamus mattis, eros id malesuada gravida, risus eros viverra elit, vitae egestas leo leo in justo. Nam egestas, ipsum vitae dictum maximus, arcu urna fermentum odio, vitae fermentum metus dolor quis nisi. Curabitur nec pulvinar nibh. Phasellus in maximus eros, vel ultricies urna. Integer sodales nibh eget tellus condimentum tincidunt. Integer porta pharetra dui non dapibus.
+        <TextView
+            android:id="@+id/textHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="@string/title_valle_de_la_luna"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@+id/imageHeader"
+            app:layout_constraintStart_toStartOf="parent" />
 
-Fusce quis urna id enim consectetur dignissim vel eget mauris. Fusce imperdiet dui mollis dolor ultrices congue. Vivamus id volutpat tellus, a eleifend eros. Proin tincidunt dictum tortor eu pharetra. Morbi id lectus maximus, posuere elit in, commodo magna. Integer ligula sem, tempor et magna sit amet, malesuada porttitor elit. Vestibulum non magna interdum, vestibulum nibh ut, pellentesque ligula. Sed vestibulum elit risus, id accumsan est commodo in. Ut in nibh at diam pretium vulputate. Vestibulum sapien tortor, congue at enim eget, sodales sollicitudin libero. Etiam dictum dui ac ultricies cursus. Ut ut ipsum in ipsum porttitor interdum non in elit. Donec consequat tristique ullamcorper. Donec urna libero, cursus a metus at, consectetur egestas dolor.
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:gravity="center"
+            android:text="@string/info_valle_de_la_luna"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintTop_toBottomOf="@+id/imageHeader" />
 
-Integer convallis semper dui, quis porta elit tincidunt sed. Ut vehicula libero sed augue vestibulum malesuada. Praesent blandit lectus dolor, quis lacinia odio suscipit efficitur. Etiam ac lorem orci. Nam dapibus aliquet porta. Nam commodo sit amet neque id elementum. Duis tincidunt, eros quis porta interdum, tellus sapien efficitur justo, a lobortis nunc tellus non tellus. Proin eget ornare massa, sed tempus risus. Donec egestas ligula orci, nec consequat est blandit eget.
-
-Donec eu dui vel nulla vehicula consectetur eget eu lectus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aliquam mattis pretium interdum. Maecenas maximus odio eu diam convallis congue et eu dui. Mauris vel ante risus. Pellentesque porta orci non sodales viverra. Cras malesuada varius odio, non fringilla turpis semper scelerisque. Etiam lorem tortor, egestas id leo id, eleifend aliquam magna. Praesent enim dui, imperdiet ac tempus sit amet, pharetra id eros. Vestibulum commodo aliquet orci in ultrices. Vestibulum maximus commodo tincidunt. "
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintTop_toBottomOf="@+id/imageHeader" />
-
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
