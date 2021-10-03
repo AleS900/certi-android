@@ -19,7 +19,7 @@ class LaPazCityActivity : AppCompatActivity() {
         laPazPlacesFragment.setOnSuccessListener {
             val intent =Intent(this,LocationInfoActivity::class.java)
             startActivity(intent)
-            finish()
+            //finish()
         }
 
     }

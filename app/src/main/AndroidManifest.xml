@@ -13,16 +13,20 @@
         android:theme="@style/Theme.AroundMe">
         <activity
             android:name=".ui.activities.LocationInfoActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName=".ui.activities.LaPazCityActivity"/>
         <activity
             android:name="com.upb.aroundme.ui.activities.LaPazCityActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName=".ui.activities.CitiesActivity"/>
         <activity
             android:name=".ui.activities.CitiesActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName=".ui.activities.LoginActivity"/>
         <activity
             android:name=".ui.activities.LoginActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName=".ui.activities.MainActivity"/>
         <activity
             android:name="com.upb.aroundme.ui.activities.MainActivity"
             android:exported="true">

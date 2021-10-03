@@ -21,7 +21,6 @@ class CitiesActivity : AppCompatActivity() {
         citiesListFragment.setOnSuccessListener {
             val intent =Intent(this,LaPazCityActivity::class.java)
             startActivity(intent)
-            finish()
         }
         }
 
