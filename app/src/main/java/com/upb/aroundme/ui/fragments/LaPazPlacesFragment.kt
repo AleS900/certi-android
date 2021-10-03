@@ -9,7 +9,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.upb.aroundme.R
 import com.upb.aroundme.ui.base.StepBaseFragment
 import com.upb.aroundme.data.LaPazPlacesDataSource
+import com.upb.aroundme.model.City
+import com.upb.aroundme.model.LaPazPlace
 import com.upb.aroundme.ui.adapters.LaPazListAdapter
+import com.upb.aroundme.ui.interfaces.CitiesCallBack
+import com.upb.aroundme.ui.interfaces.LaPazInfoCallback
 
 class LaPazPlacesFragment: StepBaseFragment() {
     private val laPazPlacesAdapter = LaPazListAdapter()
@@ -26,6 +30,14 @@ class LaPazPlacesFragment: StepBaseFragment() {
         val recyclerView = view.findViewById<RecyclerView>(R.id.rvPlaceLP)
         recyclerView.adapter = laPazPlacesAdapter
         recyclerView.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
+        addEvents()
         laPazPlacesAdapter.addAll(LaPazPlacesDataSource.laPazPlacesList)
+    }
+    private fun addEvents(){
+        laPazPlacesAdapter.setCallBack(object : LaPazInfoCallback {
+            override fun onTaskCityClicked(task: LaPazPlace) {
+                onSuccess?.invoke()
+            }
+        })
     }
 }

@@ -29,7 +29,7 @@ class CitiesListAdapter: RecyclerView.Adapter<CitiesListViewHolder>()
     }
 
     override fun onBindViewHolder(holder: CitiesListViewHolder, position: Int) {
-        val city: City = this.cityList.get(position)
+        val city: City = this.cityList[position]
         holder.bind(cityList[position])
         holder.ivCityPicture.setOnClickListener{
             callBack.onTaskCityClicked(city)

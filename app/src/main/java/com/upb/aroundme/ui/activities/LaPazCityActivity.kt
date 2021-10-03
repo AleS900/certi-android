@@ -16,6 +16,11 @@ class LaPazCityActivity : AppCompatActivity() {
 
         replaceFragment(R.id.containerLPPlacesList,laPazPlacesFragment)
 
+        laPazPlacesFragment.setOnSuccessListener {
+            val intent =Intent(this,LocationInfoActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
 
     }
 

@@ -10,11 +10,15 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.CenterCrop
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.upb.aroundme.R
+import com.upb.aroundme.model.City
 import com.upb.aroundme.model.LaPazPlace
+import com.upb.aroundme.ui.interfaces.CitiesCallBack
+import com.upb.aroundme.ui.interfaces.LaPazInfoCallback
 
 
 class LaPazListAdapter: RecyclerView.Adapter<LaPazListViewHolder>() {
     val placesLaPazList: MutableList<LaPazPlace> = mutableListOf()
+    private lateinit var callBack: LaPazInfoCallback
 
     fun addAll(newElementList: MutableList<LaPazPlace>) {
         placesLaPazList.clear()
@@ -28,16 +32,25 @@ class LaPazListAdapter: RecyclerView.Adapter<LaPazListViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: LaPazListViewHolder, position: Int) {
+        val info: LaPazPlace = this.placesLaPazList[position]
         holder.bind(placesLaPazList[position])
+        holder.laPazPlaceImage.setOnClickListener{
+            callBack.onTaskCityClicked(info)
+        }
+
+
     }
 
     override fun getItemCount(): Int {
         return placesLaPazList.size
     }
+    fun setCallBack(callBack: LaPazInfoCallback ){
+        this.callBack=callBack
+    }
 }
 
 class LaPazListViewHolder(val itemView: View): RecyclerView.ViewHolder(itemView) {
-    private val laPazPlaceImage = itemView.findViewById<ImageView>(R.id.laPazPlaceImage)
+    val laPazPlaceImage = itemView.findViewById<ImageView>(R.id.laPazPlaceImage)
     private val laPazPlaceName = itemView.findViewById<TextView>(R.id.laPazPlaceName)
     private val laPazPlaceShortDescription = itemView.findViewById<TextView>(R.id.laPazPlaceShortDescription)
     private val laPazPlaceLikes = itemView.findViewById<TextView>(R.id.laPazPlaceLikes)
