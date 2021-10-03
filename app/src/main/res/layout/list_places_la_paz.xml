@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/laPazPlaceImage"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic"  />
+
+    <TextView
+        android:id="@+id/laPazPlaceName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/laPazPlaceImage"
+        app:layout_constraintStart_toStartOf="@+id/laPazPlaceImage"
+        app:layout_constraintTop_toBottomOf="@+id/laPazPlaceImage"
+        tools:text="Place Name" />
+
+
+    <TextView
+        android:id="@+id/laPazPlaceShortDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/laPazPlaceImage"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/laPazPlaceImage"
+        app:layout_constraintTop_toBottomOf="@+id/laPazPlaceName"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="A short description" />
+
+    <TextView
+        android:id="@+id/laPazPlaceLikes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/laPazPlaceImage"
+        app:layout_constraintEnd_toEndOf="@+id/laPazPlaceImage"
+        tools:text="128" />
+
+    <ImageView
+        android:id="@+id/likeIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/laPazPlaceLikes"
+        app:layout_constraintEnd_toStartOf="@+id/laPazPlaceLikes"
+        app:layout_constraintTop_toTopOf="@+id/laPazPlaceLikes"
+        app:srcCompat="@drawable/heart_icon"
+
+         />
+
+    <ImageView
+        android:id="@+id/gpsIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toBottomOf="@+id/laPazPlaceImage"
+        app:layout_constraintEnd_toStartOf="@+id/likeIcon"
+        app:srcCompat="@drawable/location_icon" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
