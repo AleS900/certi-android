@@ -43,12 +43,12 @@ class LaPazListViewHolder(val itemView: View): RecyclerView.ViewHolder(itemView)
     private val laPazPlaceLikes = itemView.findViewById<TextView>(R.id.laPazPlaceLikes)
 
     fun bind(placesLaPaz: LaPazPlace) {
-        Glide.with(itemView)
-            .load(placesLaPaz.urlImage)
-            .transform(CenterCrop(), RoundedCorners(24))
-            .into(laPazPlaceImage)
-        laPazPlaceName.text = placesLaPaz.placeName
-        laPazPlaceShortDescription.text = placesLaPaz.placeDescription
-        laPazPlaceLikes.text = "${placesLaPaz.likeCont}"
+            Glide.with(itemView)
+                .load(placesLaPaz.urlImage)
+                .transform(CenterCrop(), RoundedCorners(24))
+                .into(laPazPlaceImage)
+            laPazPlaceName.text = placesLaPaz.placeName
+            laPazPlaceShortDescription.text = placesLaPaz.placeDescription
+            laPazPlaceLikes.text = "${placesLaPaz.likeCont}"
     }
 }

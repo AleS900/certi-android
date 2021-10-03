@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
 
 
         Handler().postDelayed( {
-            val intent  =  Intent(this, SecondActivity::class.java)
+            val intent  =  Intent(this, LaPazCityActivity::class.java)
             startActivity(intent)
         },3000 )
     }

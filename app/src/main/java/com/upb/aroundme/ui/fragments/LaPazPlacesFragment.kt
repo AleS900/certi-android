@@ -1,17 +1,19 @@
 package com.upb.aroundme.ui.fragments
 
-import androidx.fragment.app.Fragment
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.upb.aroundme.R
 import com.upb.aroundme.data.LaPazPlacesDataSource
 import com.upb.aroundme.ui.adapters.LaPazListAdapter
+import com.upb.aroundme.ui.base.StepsBaseFragment
 
-class LaPazPlacesFragment: Fragment() {
+class LaPazPlacesFragment: StepsBaseFragment() {
     private val laPazPlacesAdapter = LaPazListAdapter()
 
     override fun onCreateView(
@@ -19,7 +21,7 @@ class LaPazPlacesFragment: Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return inflater.inflate(R.layout.activity_lp_places, container, false)
+        return inflater.inflate(R.layout.fragment_places_lp, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
