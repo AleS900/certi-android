@@ -1,5 +1,6 @@
 package com.upb.aroundme.ui.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.upb.aroundme.ui.fragments.CitiesListFragment
@@ -17,5 +18,11 @@ class CitiesActivity : AppCompatActivity() {
 
         replaceFragment(R.id.containerCityList,citiesListFragment)
 
+        citiesListFragment.setOnSuccessListener {
+            val intent =Intent(this,LaPazCityActivity::class.java)
+            startActivity(intent)
+            finish()
         }
+        }
+
 }

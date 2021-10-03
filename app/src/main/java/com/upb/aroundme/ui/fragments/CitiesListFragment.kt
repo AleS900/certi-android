@@ -6,9 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.upb.aroundme.CitiesCallBack
 import com.upb.aroundme.CitiesListAdapter
 import com.upb.aroundme.R
 import com.upb.aroundme.data.CitiesDataSource
+import com.upb.aroundme.model.City
 import com.upb.aroundme.ui.base.StepBaseFragment
 
 class CitiesListFragment: StepBaseFragment() {
@@ -27,6 +29,15 @@ class CitiesListFragment: StepBaseFragment() {
         recycledView.adapter= citiesListAdapter
         //recycledView.layoutManager= LinearLayoutManager(context,LinearLayoutManager.VERTICAL,false)
         recycledView.layoutManager=GridLayoutManager(context,2)
+        addEvents()
         citiesListAdapter.addAll(CitiesDataSource.departementsList)
+
+    }
+    private fun addEvents(){
+        citiesListAdapter.setCallBack(object : CitiesCallBack {
+            override fun onTaskCityClicked(task: City) {
+                onSuccess?.invoke()
+            }
+        })
     }
 }

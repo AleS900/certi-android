@@ -14,6 +14,7 @@ import com.upb.aroundme.model.City
 class CitiesListAdapter: RecyclerView.Adapter<CitiesListViewHolder>()
 {
     val cityList: MutableList<City> = mutableListOf()
+    private lateinit var callBack: CitiesCallBack
     fun addAll(newCityList:MutableList<City>){
         cityList.clear()
         cityList.addAll(newCityList)
@@ -27,17 +28,26 @@ class CitiesListAdapter: RecyclerView.Adapter<CitiesListViewHolder>()
     }
 
     override fun onBindViewHolder(holder: CitiesListViewHolder, position: Int) {
+        val city: City = this.cityList.get(position)
         holder.bind(cityList[position])
+        holder.ivCityPicture.setOnClickListener{
+            callBack.onTaskCityClicked(city)
+
+        }
     }
 
     override fun getItemCount(): Int {
         return cityList.size
     }
+
+    fun setCallBack(callBack: CitiesCallBack){
+        this.callBack=callBack
+    }
 }
 
 class CitiesListViewHolder(val itemView: View):RecyclerView.ViewHolder(itemView){
-    private val ivCityPicture=itemView.findViewById<ImageView>(R.id.ivCityPicture)
-    private val tvCityName=itemView.findViewById<TextView>(R.id.tvNameCity)
+     val ivCityPicture=itemView.findViewById<ImageView>(R.id.ivCityPicture)
+     val tvCityName=itemView.findViewById<TextView>(R.id.tvNameCity)
 
     fun bind(city: City){
         Glide.with(itemView)
