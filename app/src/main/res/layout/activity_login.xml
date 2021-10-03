@@ -41,8 +41,9 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_end="478dp" />
 
-    <fragment
-        android:id="@+id/fragment_login"
+    <FrameLayout
+        android:background="@color/white"
+        android:id="@+id/frame_login"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"

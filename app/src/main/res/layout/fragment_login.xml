@@ -67,7 +67,7 @@
         android:id="@+id/button4"
         android:layout_width="330dp"
         android:layout_height="70dp"
-        app:layout_constraintBottom_toTopOf="@+id/button_continuar"
+        app:layout_constraintBottom_toTopOf="@+id/button_next"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button3" />
@@ -82,7 +82,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <Button
-        android:id="@+id/button_continuar"
+        android:id="@+id/button_next"
         style="?attr/materialButtonOutlinedStyle"
         android:layout_width="152dp"
         android:layout_height="64dp"
