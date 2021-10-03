@@ -19,7 +19,7 @@ class LaPazPlacesFragment: Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return inflater.inflate(R.layout.container_places_lp, container, false)
+        return inflater.inflate(R.layout.activity_lp_places, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

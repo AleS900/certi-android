@@ -5,15 +5,14 @@ import android.os.Bundle
 import com.upb.aroundme.R
 import com.upb.aroundme.ui.fragments.LaPazPlacesFragment
 
-class LaPazCityActivity {
+class LaPazCityActivity : AppCompatActivity{
     val laPazPlacesFragment = LaPazPlacesFragment()
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.list_places_la_paz)
+        setContentView(R.layout.activity_lp_places)
 
-        replaceFragment(R.id.containerCityList,laPazPlacesFragment)
+        replaceFragment(R.id.containerLPPlacesList,laPazPlacesFragment)
 
     }
 }
