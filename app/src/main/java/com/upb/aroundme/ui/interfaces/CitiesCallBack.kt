@@ -1,4 +1,4 @@
-package com.upb.aroundme
+package com.upb.aroundme.ui.interfaces
 
 import com.upb.aroundme.model.City
 

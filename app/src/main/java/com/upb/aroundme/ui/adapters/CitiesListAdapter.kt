@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.CenterCrop
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners
+import com.upb.aroundme.ui.interfaces.CitiesCallBack
 import com.upb.aroundme.model.City
 
 class CitiesListAdapter: RecyclerView.Adapter<CitiesListViewHolder>()
