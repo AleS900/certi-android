@@ -9,7 +9,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="DarkGreen">#8CC084</color>
+    <color name="green">#8CC084</color>
     <color name="buttons">#FFE8F2F2</color>
-    <color name="green">#C1D7AE</color>
+
 </resources>
