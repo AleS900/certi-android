@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AroundMe</string>
+    <string name="aroundme">AroundMe</string>
+    <string name="placeLaPazName">場所</string>
+    <string name="la_paz">La Paz</string>
+    <string name="title_valle_de_la_luna">月の谷</string>
+    <string name="info_valle_de_la_luna"> それは素晴らしい美しさの自然の魅力であり、その主な作者は水と風であり、地形への侵食効果を通じて、月の風景に似た気まぐれな円錐形と火口の形成を作成しました。ラパス周辺の山々では、粘土にはさまざまな鉱物が含まれており、白っぽい色から紫色に変化し、最も一般的な茶色と赤みがかっています。</string>
+    <string name="put_email">メールを入れて</string>
+    <string name="put_password">パスワード</string>
+    <string name="accept">受け入れるために</string>
+    <string name="title_departments">何を知りたいですか？</string>
+
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AroundMe</string>
+    <string name="aroundme">AroundMe</string>
+    <string name="placeLaPazName">Place</string>
+    <string name="la_paz">La Paz</string>
+    <string name="title_valle_de_la_luna">Valle de la Luna</string>
+    <string name="info_valle_de_la_luna">Se trata de un atractivo natural de gran belleza, cuyos principales autores son el agua y el viento que, a través de sus efectos erosivos del terreno, crearon caprichosas formaciones de cono y cráteres que se asemejan a un paisaje lunar. En las montañas de alrededor de La Paz, la arcilla contiene minerales diferentes que las dota de colores variados, pasando del blanquecino al violeta con los más habituales marrones y rojizos. </string>
+    <string name="put_email">Coloque su correo electronico</string>
+    <string name="put_password">Contraseña</string>
+    <string name="accept">Aceptar</string>
+    <string name="title_departments">¿Qué te gustaría conocer?</string>
+
+</resources>

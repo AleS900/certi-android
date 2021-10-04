@@ -5,11 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.upb.aroundme.ui.fragments.CitiesListFragment
 import com.upb.aroundme.R
-import com.upb.aroundme.replaceFragment
 
 class CitiesActivity : AppCompatActivity() {
 
-    val citiesListFragment = CitiesListFragment()
+    private val citiesListFragment = CitiesListFragment()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AroundMe</string>
+    <string name="aroundme">AroundMe</string>
+    <string name="placeLaPazName">장소</string>
+    <string name="la_paz">La Paz</string>
+    <string name="title_valle_de_la_luna">달의 계곡</string>
+    <string name="info_valle_de_la_luna"> 지형에 대한 침식 효과를 통해 달의 풍경을 닮은 변덕스러운 원뿔과 분화구 형성을 만든 물과 바람이 주요 저자인 위대한 아름다움의 자연적 매력입니다. 라파스 주변의 산에서 점토는 희끄무레한 색에서 보라색까지 가장 흔한 갈색과 붉은 색을 띠는 다양한 색상을 제공하는 다양한 광물을 함유하고 있습니다.</string>
+    <string name="put_email">이메일을 넣어</string>
+    <string name="put_password">비밀번호</string>
+    <string name="accept">수락하다</string>
+    <string name="title_departments">당신이 알고 싶은 것이?</string>
+</resources>

@@ -7,12 +7,10 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.upb.aroundme.R
-import com.upb.aroundme.ui.base.StepBaseFragment
 import com.upb.aroundme.data.LaPazPlacesDataSource
-import com.upb.aroundme.model.City
 import com.upb.aroundme.model.LaPazPlace
 import com.upb.aroundme.ui.adapters.LaPazListAdapter
-import com.upb.aroundme.ui.interfaces.CitiesCallBack
+import com.upb.aroundme.ui.base.StepBaseFragment
 import com.upb.aroundme.ui.interfaces.LaPazInfoCallback
 
 class LaPazPlacesFragment: StepBaseFragment() {

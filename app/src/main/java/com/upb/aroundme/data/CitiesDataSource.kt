@@ -3,7 +3,7 @@ package com.upb.aroundme.data
 import com.upb.aroundme.model.City
 
 object CitiesDataSource {
-    val departementsList = mutableListOf<City>(
+    val departementsList = mutableListOf(
         City("La Paz","https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/La_Paz_Skyline.jpg/260px-La_Paz_Skyline.jpg"),
         City("Santa Cruz","https://misionaltours.com/timthumb.php?src=https://misionaltours.com/wadm/imagenes/producto/31_05_2019_16_04_42_170716201.png&w=800&h=600&q=100"),
         City("Cochabamba","https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Cristo_de_La_Concordia.jpg/295px-Cristo_de_La_Concordia.jpg"),

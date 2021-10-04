@@ -1,5 +1,6 @@
 package com.upb.aroundme.ui.adapters
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,16 +11,15 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.CenterCrop
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.upb.aroundme.R
-import com.upb.aroundme.model.City
 import com.upb.aroundme.model.LaPazPlace
-import com.upb.aroundme.ui.interfaces.CitiesCallBack
 import com.upb.aroundme.ui.interfaces.LaPazInfoCallback
 
 
 class LaPazListAdapter: RecyclerView.Adapter<LaPazListViewHolder>() {
-    val placesLaPazList: MutableList<LaPazPlace> = mutableListOf()
+    private val placesLaPazList: MutableList<LaPazPlace> = mutableListOf()
     private lateinit var callBack: LaPazInfoCallback
 
+    @SuppressLint("NotifyDataSetChanged")
     fun addAll(newElementList: MutableList<LaPazPlace>) {
         placesLaPazList.clear()
         placesLaPazList.addAll(newElementList)
@@ -49,8 +49,8 @@ class LaPazListAdapter: RecyclerView.Adapter<LaPazListViewHolder>() {
     }
 }
 
-class LaPazListViewHolder(val itemView: View): RecyclerView.ViewHolder(itemView) {
-    val laPazPlaceImage = itemView.findViewById<ImageView>(R.id.laPazPlaceImage)
+class LaPazListViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
+    val laPazPlaceImage: ImageView = itemView.findViewById(R.id.laPazPlaceImage)
     private val laPazPlaceName = itemView.findViewById<TextView>(R.id.laPazPlaceName)
     private val laPazPlaceShortDescription = itemView.findViewById<TextView>(R.id.laPazPlaceShortDescription)
     private val laPazPlaceLikes = itemView.findViewById<TextView>(R.id.laPazPlaceLikes)

@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.upb.aroundme.ui.interfaces.CitiesCallBack
-import com.upb.aroundme.CitiesListAdapter
+import com.upb.aroundme.ui.adapters.CitiesListAdapter
 import com.upb.aroundme.R
 import com.upb.aroundme.data.CitiesDataSource
 import com.upb.aroundme.model.City

@@ -1,4 +1,4 @@
-package com.upb.aroundme
+package com.upb.aroundme.ui.activities
 
 import androidx.annotation.IdRes
 import androidx.appcompat.app.AppCompatActivity

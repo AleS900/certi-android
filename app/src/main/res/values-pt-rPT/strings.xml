@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AroundMe</string>
+    <string name="aroundme">AroundMe</string>
+    <string name="placeLaPazName">Lugar</string>
+    <string name="la_paz">La Paz</string>
+    <string name="title_valle_de_la_luna">Vale da Lua</string>
+    <string name="info_valle_de_la_luna">É um atractivo natural de grande beleza, cujos principais autores são a água e o vento que, através dos seus efeitos erosivos no terreno, criaram formações caprichosas de cones e crateras que se assemelham a uma paisagem lunar. Nas montanhas ao redor de La Paz, a argila contém diversos minerais que lhes conferem cores variadas, indo do esbranquiçado ao roxo com o marrom e o avermelhado mais comuns. </string>
+    <string name="put_email">Coloque seu email</string>
+    <string name="put_password">Senha</string>
+    <string name="accept">Aceitar</string>
+    <string name="title_departments"> O que você gostaria de saber?</string>
+</resources>

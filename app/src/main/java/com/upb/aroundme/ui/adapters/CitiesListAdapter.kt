@@ -1,4 +1,4 @@
-package com.upb.aroundme
+package com.upb.aroundme.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.View
@@ -9,12 +9,13 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.CenterCrop
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners
+import com.upb.aroundme.R
 import com.upb.aroundme.ui.interfaces.CitiesCallBack
 import com.upb.aroundme.model.City
 
 class CitiesListAdapter: RecyclerView.Adapter<CitiesListViewHolder>()
 {
-    val cityList: MutableList<City> = mutableListOf()
+    private val cityList: MutableList<City> = mutableListOf()
     private lateinit var callBack: CitiesCallBack
     fun addAll(newCityList:MutableList<City>){
         cityList.clear()
@@ -46,9 +47,9 @@ class CitiesListAdapter: RecyclerView.Adapter<CitiesListViewHolder>()
     }
 }
 
-class CitiesListViewHolder(val itemView: View):RecyclerView.ViewHolder(itemView){
-     val ivCityPicture=itemView.findViewById<ImageView>(R.id.ivCityPicture)
-     val tvCityName=itemView.findViewById<TextView>(R.id.tvNameCity)
+class CitiesListViewHolder(itemView: View):RecyclerView.ViewHolder(itemView){
+     val ivCityPicture: ImageView =itemView.findViewById(R.id.ivCityPicture)
+     private val tvCityName=itemView.findViewById<TextView>(R.id.tvNameCity)
 
     fun bind(city: City){
         Glide.with(itemView)

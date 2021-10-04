@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AroundMe</string>
+    <string name="aroundme">AroundMe</string>
+    <string name="placeLaPazName">地方</string>
+    <string name="la_paz">La Paz</string>
+    <string name="title_valle_de_la_luna">月之谷</string>
+    <string name="info_valle_de_la_luna">这是一个美丽的自然景点，其主要作者是水和风，通过它们对地形的侵蚀作用，创造了类似于月球景观的反复无常的锥形和火山口地层。在拉巴斯周围的山区，粘土含有不同的矿物质，赋予它们不同的颜色，从白色到紫色，最常见的是棕色和红色。</string>
+    <string name="put_email">把你的电子邮件</string>
+    <string name="put_password">密码</string>
+    <string name="accept">接受</string>
+    <string name="title_departments"> 你想知道什么？</string>
+</resources>

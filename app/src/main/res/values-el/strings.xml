@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AroundMe</string>
+    <string name="aroundme">AroundMe</string>
+    <string name="placeLaPazName">Θέση</string>
+    <string name="la_paz">La Paz</string>
+    <string name="title_valle_de_la_luna"> Κοιλάδα του φεγγαριού</string>
+    <string name="info_valle_de_la_luna">Είναι ένα φυσικό αξιοθέατο μεγάλης ομορφιάς, του οποίου οι κύριοι συγγραφείς είναι το νερό και ο άνεμος, ο οποίος, μέσω των διαβρωτικών επιδράσεων στο έδαφος, δημιούργησε ιδιότροπους κώνους και κρατήρες που μοιάζουν με σεληνιακό τοπίο. Στα βουνά γύρω από το La Paz, ο πηλός περιέχει διαφορετικά ορυκτά που τους δίνουν ποικίλα χρώματα, από λευκό σε πορφυρό με το πιο συνηθισμένο καφέ και κοκκινωπό. </string>
+    <string name="put_email">Βάλτε το email σας</string>
+    <string name="put_password">Κωδικός πρόσβασης</string>
+    <string name="accept">Να αποδεχθεί</string>
+    <string name="title_departments">Τι θα θέλατε να ξέρετε?</string>
+
+</resources>

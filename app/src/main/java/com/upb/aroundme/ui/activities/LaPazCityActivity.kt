@@ -4,11 +4,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.upb.aroundme.R
-import com.upb.aroundme.replaceFragment
 import com.upb.aroundme.ui.fragments.LaPazPlacesFragment
 
 class LaPazCityActivity : AppCompatActivity() {
-    val laPazPlacesFragment = LaPazPlacesFragment()
+    private val laPazPlacesFragment = LaPazPlacesFragment()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
