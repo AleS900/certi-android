@@ -4,11 +4,12 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.upb.aroundme.R
 import com.upb.aroundme.ui.base.StepBaseFragment
 
 class LoginFragment: StepBaseFragment() {
-    lateinit var bttn_login: View
+    lateinit var button_next: View
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -19,9 +20,12 @@ class LoginFragment: StepBaseFragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        bttn_login=view.findViewById(R.id.button_next)
-        bttn_login.setOnClickListener{
-            onSuccess?.invoke()
+
+        button_next = view.findViewById(R.id.button_next)
+        button_next.setOnClickListener {
+            val goToCitiesListDirections = LoginFragmentDirections.actionLoginFragmentToCitiesActivity()
+            findNavController().navigate(goToCitiesListDirections)
         }
     }
 }
+

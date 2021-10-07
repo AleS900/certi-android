@@ -12,12 +12,6 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-        replaceFragment(R.id.frame_login,loginFragment)
 
-        loginFragment.setOnSuccessListener{
-            val intent = Intent(this, CitiesActivity()::class.java)
-            startActivity(intent)
-            finish()
-        }
     }
 }
