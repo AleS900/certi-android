@@ -37,11 +37,13 @@
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:background="@color/white"
+        android:backgroundTint="#FAF9F9"
+
         app:defaultNavHost="true"
-        app:navGraph="@navigation/cities_nav_graph"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline2"
-        />
+        app:navGraph="@navigation/cities_nav_graph" />
 </androidx.constraintlayout.widget.ConstraintLayout>
