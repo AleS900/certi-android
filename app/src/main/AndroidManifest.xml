@@ -14,9 +14,9 @@
         <activity
             android:name=".ui.activities.LocationInfoActivity"
             android:exported="true"
-            android:parentActivityName=".ui.activities.LaPazCityActivity"/>
+            android:parentActivityName=".ui.activities.GeneralCityActivity"/>
         <activity
-            android:name="com.upb.aroundme.ui.activities.LaPazCityActivity"
+            android:name="com.upb.aroundme.ui.activities.GeneralCityActivity"
             android:exported="true"
             android:parentActivityName=".ui.activities.CitiesActivity"/>
         <activity

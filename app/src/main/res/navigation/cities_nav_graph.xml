@@ -11,12 +11,12 @@
         tools:layout="@layout/fragment_cities_list"
         android:label="CitiesListFragment" >
         <action
-            android:id="@+id/action_citiesListFragment_to_laPazCityActivity"
+            android:id="@+id/action_citiesListFragment_to_generalCityActivity"
             app:destination="@id/laPazCityActivity" />
     </fragment>
     <activity
         android:id="@+id/laPazCityActivity"
-        android:name="com.upb.aroundme.ui.activities.LaPazCityActivity"
+        android:name="com.upb.aroundme.ui.activities.GeneralCityActivity"
         android:label="activity_lp_places"
         tools:layout="@layout/activity_lp_places" />
 </navigation>
