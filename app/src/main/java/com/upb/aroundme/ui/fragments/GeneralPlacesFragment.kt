@@ -4,38 +4,39 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.upb.aroundme.R
 import com.upb.aroundme.data.LaPazPlacesDataSource
-import com.upb.aroundme.model.LaPazPlace
+import com.upb.aroundme.databinding.FragmentPlacesGeneralCitiesBinding
+import com.upb.aroundme.model.PlacesToVisit
 import com.upb.aroundme.ui.adapters.LaPazListAdapter
 import com.upb.aroundme.ui.base.StepBaseFragment
 import com.upb.aroundme.ui.interfaces.LaPazInfoCallback
 
-class LaPazPlacesFragment: StepBaseFragment() {
+class GeneralPlacesFragment: StepBaseFragment() {
     private val laPazPlacesAdapter = LaPazListAdapter()
+    private lateinit var binding : FragmentPlacesGeneralCitiesBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return inflater.inflate(R.layout.fragment_places_general_cities, container, false)
+        binding = FragmentPlacesGeneralCitiesBinding.inflate(inflater,container,false)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        val recyclerView = view.findViewById<RecyclerView>(R.id.rvPlaceLP)
-        recyclerView.adapter = laPazPlacesAdapter
-        recyclerView.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
-        addEvents()
+        binding.rvPlaceLP.adapter = laPazPlacesAdapter
+        val layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
+        binding.rvPlaceLP.layoutManager = layoutManager
         laPazPlacesAdapter.addAll(LaPazPlacesDataSource.laPazPlacesList)
+        laPazPlacesAdapter.setOnPlaceToVisitClickListener {
+            val directions = GeneralPlacesFragmentDirections.actionGeneralPlacesFragmentToLocationInfoActivity()
+            findNavController().navigate(directions)
+        }
     }
-    private fun addEvents(){
-        laPazPlacesAdapter.setCallBack(object : LaPazInfoCallback {
-            override fun onTaskCityClicked(task: LaPazPlace) {
-                onSuccess?.invoke()
-            }
-        })
-    }
+
 }

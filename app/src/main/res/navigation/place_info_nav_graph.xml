@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/place_info_nav_graph"
+    app:startDestination="@id/GeneralPlacesFragment">
+
+    <fragment
+        android:id="@+id/GeneralPlacesFragment"
+        android:name="com.upb.aroundme.ui.fragments.GeneralPlacesFragment"
+        android:label="LaPazPlacesFragment" >
+        <action
+            android:id="@+id/action_GeneralPlacesFragment_to_locationInfoActivity"
+            app:destination="@id/locationInfoActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/locationInfoActivity"
+        android:name="com.upb.aroundme.ui.activities.LocationInfoActivity"
+        android:label="activity_location_info"
+        tools:layout="@layout/activity_location_info" />
+</navigation>

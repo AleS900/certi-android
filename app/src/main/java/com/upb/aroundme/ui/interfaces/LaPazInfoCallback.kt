@@ -1,7 +1,7 @@
 package com.upb.aroundme.ui.interfaces
 
-import com.upb.aroundme.model.LaPazPlace
+import com.upb.aroundme.model.PlacesToVisit
 
 interface LaPazInfoCallback {
-    fun onTaskCityClicked(task: LaPazPlace)
+    fun onTaskCityClicked(task: PlacesToVisit)
 }

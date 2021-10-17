@@ -32,14 +32,17 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.1" />
 
-    <FrameLayout
-        android:id="@+id/containerLPPlacesList"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        app:defaultNavHost="true"
         android:background="@color/white"
+        app:navGraph="@navigation/place_info_nav_graph"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guidelineLaPaz" />
+        app:layout_constraintTop_toTopOf="@+id/guidelineLaPaz"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
