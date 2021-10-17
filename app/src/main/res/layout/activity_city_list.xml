@@ -32,13 +32,16 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.17" />
 
-    <FrameLayout
-        android:id="@+id/containerCityList"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView2"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@color/white"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/cities_nav_graph"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

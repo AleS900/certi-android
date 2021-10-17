@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cities_nav_graph"
+    app:startDestination="@id/citiesListFragment">
+
+    <fragment
+        android:id="@+id/citiesListFragment"
+        android:name="com.upb.aroundme.ui.fragments.CitiesListFragment"
+        tools:layout="@layout/fragment_cities_list"
+        android:label="CitiesListFragment" >
+        <action
+            android:id="@+id/action_citiesListFragment_to_laPazCityActivity"
+            app:destination="@id/laPazCityActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/laPazCityActivity"
+        android:name="com.upb.aroundme.ui.activities.LaPazCityActivity"
+        android:label="activity_lp_places"
+        tools:layout="@layout/activity_lp_places" />
+</navigation>
