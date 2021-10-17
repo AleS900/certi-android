@@ -11,7 +11,7 @@ class GeneralCityActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_lp_places)
+        setContentView(R.layout.activity_general_cities_places)
 
         replaceFragment(R.id.containerLPPlacesList,laPazPlacesFragment)
 

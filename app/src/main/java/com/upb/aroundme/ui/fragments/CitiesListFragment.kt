@@ -35,7 +35,7 @@ class CitiesListFragment: StepBaseFragment() {
         binding.rvCities.layoutManager = layoutManager
         citiesListAdapter.addAll(CitiesDataSource.departementsList)
         citiesListAdapter.setOnCityClickListener {
-            val directions = CitiesListFragmentDirections.actionCitiesListFragmentToLaPazCityActivity()
+            val directions = CitiesListFragmentDirections.actionCitiesListFragmentToGeneralCityActivity()
             findNavController().navigate(directions)
         }
 

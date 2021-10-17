@@ -21,7 +21,7 @@ class LaPazPlacesFragment: StepBaseFragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return inflater.inflate(R.layout.fragment_places_lp, container, false)
+        return inflater.inflate(R.layout.fragment_places_general_cities, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

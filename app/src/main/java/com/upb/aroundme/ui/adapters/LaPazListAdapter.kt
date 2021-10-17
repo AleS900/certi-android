@@ -27,7 +27,7 @@ class LaPazListAdapter: RecyclerView.Adapter<LaPazListViewHolder>() {
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LaPazListViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.list_places_la_paz, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.list_places_general_cities, parent, false)
         return LaPazListViewHolder(view)
     }
 
