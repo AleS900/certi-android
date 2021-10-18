@@ -21,12 +21,12 @@ object CitiesDataSource {
             pictureUrl = "https://ilamdir.org/blobs/ilamdir/w1280h720/328/2019/41/elpais.jpg"
         ),
         City(
-            nameCity ="Potosi",
+            nameCity ="Potosí",
             pictureUrl = "https://www.elcolombiano.com/binrepository/733x562/0c0/0d0/none/11101/WVSQ/potosiimagen_37443608_20210329100749.jpg"
         ),
         City(
             nameCity ="Oruro",
-            pictureUrl = "https://web.senado.gob.bo/sites/default/files/styles/img-standard__800x600_/public/oruro.jpg?itok=UFHExbem"
+            pictureUrl = "https://denomades.s3.us-west-2.amazonaws.com/blog/wp-content/uploads/2018/01/11105420/Screen-Shot-2018-01-11-at-10.53.44-AM.png"
         ),
         City(
             nameCity ="Beni",
