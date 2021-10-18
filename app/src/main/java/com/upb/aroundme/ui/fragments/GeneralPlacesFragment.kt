@@ -4,6 +4,8 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -14,10 +16,12 @@ import com.upb.aroundme.model.PlacesToVisit
 import com.upb.aroundme.ui.adapters.LaPazListAdapter
 import com.upb.aroundme.ui.base.StepBaseFragment
 import com.upb.aroundme.ui.interfaces.LaPazInfoCallback
+import com.upb.aroundme.ui.viewmodels.PlacesViewModel
 
 class GeneralPlacesFragment: StepBaseFragment() {
     private val laPazPlacesAdapter = LaPazListAdapter()
     private lateinit var binding : FragmentPlacesGeneralCitiesBinding
+    private val placesViewModel: PlacesViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -29,6 +33,7 @@ class GeneralPlacesFragment: StepBaseFragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
         binding.rvPlaceLP.adapter = laPazPlacesAdapter
         val layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
         binding.rvPlaceLP.layoutManager = layoutManager

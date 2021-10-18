@@ -1,95 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-
-    <ImageView
-        android:id="@+id/laPazPlaceImage"
-        android:layout_width="0dp"
-        android:layout_height="200dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/backgrounds/scenic"  />
-
-    <TextView
-        android:id="@+id/laPazPlaceName"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/laPazPlaceImage"
-        app:layout_constraintStart_toStartOf="@+id/laPazPlaceImage"
-        app:layout_constraintTop_toBottomOf="@+id/laPazPlaceImage"
-        tools:text="Place Name" />
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="place"
+            type="com.upb.aroundme.model.PlacesToVisit" />
+    </data>
 
 
-    <TextView
-        android:id="@+id/laPazPlaceShortDescription"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/laPazPlaceImage"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/laPazPlaceImage"
-        app:layout_constraintTop_toBottomOf="@+id/laPazPlaceName"
-        app:layout_constraintVertical_bias="0.0"
-        android:textColor="@color/teal_700"
-        tools:text="A short description" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/laPazPlaceLikes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/laPazPlaceImage"
-        app:layout_constraintEnd_toEndOf="@+id/laPazPlaceImage"
-        tools:text="128" />
+        <ImageView
+            android:id="@+id/laPazPlaceImage"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcUrl="@{place.urlImage}"
+            tools:srcCompat="@tools:sample/backgrounds/scenic"  />
 
-    <ImageView
-        android:id="@+id/likeIcon"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginEnd="4dp"
-        app:layout_constraintBottom_toBottomOf="@+id/laPazPlaceLikes"
-        app:layout_constraintEnd_toStartOf="@+id/laPazPlaceLikes"
-        app:layout_constraintTop_toTopOf="@+id/laPazPlaceLikes"
-        app:srcCompat="@drawable/heart_icon_white"
+        <TextView
+            android:id="@+id/laPazPlaceName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/laPazPlaceImage"
+            app:layout_constraintStart_toStartOf="@+id/laPazPlaceImage"
+            app:layout_constraintTop_toBottomOf="@+id/laPazPlaceImage"
+            android:text="@{place.placeName}"
+            tools:text="Place Name" />
 
-         />
 
-    <ImageView
-        android:id="@+id/gpsIcon"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="11dp"
-        app:layout_constraintBottom_toBottomOf="@+id/laPazPlaceImage"
-        app:layout_constraintEnd_toStartOf="@+id/likeIcon"
-        app:srcCompat="@drawable/location_pointer_white" />
+        <TextView
+            android:id="@+id/laPazPlaceShortDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/laPazPlaceImage"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/laPazPlaceImage"
+            app:layout_constraintTop_toBottomOf="@+id/laPazPlaceName"
+            app:layout_constraintVertical_bias="0.0"
+            android:textColor="@color/teal_700"
+            android:text="@{place.placeDescription}"
+            tools:text="A short description" />
 
-    <View
-        android:id="@+id/line_divisor"
-        android:layout_width="fill_parent"
-        android:layout_height="2dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="42dp"
-        android:layout_marginEnd="42dp"
-        android:layout_below="@+id/laPazPlaceShortDescription"
-        android:background="@color/gray"
-        app:layout_constraintStart_toStartOf="@+id/laPazPlaceShortDescription"
-        app:layout_constraintTop_toBottomOf="@+id/laPazPlaceShortDescription" />
+        <TextView
+            android:id="@+id/laPazPlaceLikes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/laPazPlaceImage"
+            app:layout_constraintEnd_toEndOf="@+id/laPazPlaceImage"
+            android:text="@{String.valueOf(place.likeCont)}"
+            tools:text="128" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:id="@+id/likeIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintBottom_toBottomOf="@+id/laPazPlaceLikes"
+            app:layout_constraintEnd_toStartOf="@+id/laPazPlaceLikes"
+            app:layout_constraintTop_toTopOf="@+id/laPazPlaceLikes"
+            app:srcCompat="@drawable/heart_icon_white"
+
+            />
+
+        <ImageView
+            android:id="@+id/gpsIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="11dp"
+            app:layout_constraintBottom_toBottomOf="@+id/laPazPlaceImage"
+            app:layout_constraintEnd_toStartOf="@+id/likeIcon"
+            app:srcCompat="@drawable/location_pointer_white" />
+
+        <View
+            android:id="@+id/line_divisor"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginEnd="42dp"
+            android:layout_below="@+id/laPazPlaceShortDescription"
+            android:background="@color/gray"
+            app:layout_constraintStart_toStartOf="@+id/laPazPlaceShortDescription"
+            app:layout_constraintTop_toBottomOf="@+id/laPazPlaceShortDescription" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

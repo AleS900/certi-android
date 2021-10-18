@@ -7,7 +7,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.CenterCrop
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners
-import com.upb.aroundme.R
 import com.upb.aroundme.databinding.ListPlacesGeneralCitiesBinding
 import com.upb.aroundme.model.PlacesToVisit
 import com.upb.aroundme.ui.interfaces.LaPazInfoCallback
@@ -37,7 +36,6 @@ class LaPazListAdapter: RecyclerView.Adapter<PlacesToVisitListViewHolder>() {
         }
 
     }
-
     override fun getItemCount(): Int {
         return placesToVisitList.size
     }
@@ -50,15 +48,15 @@ class LaPazListAdapter: RecyclerView.Adapter<PlacesToVisitListViewHolder>() {
 }
 
 class PlacesToVisitListViewHolder(val binding: ListPlacesGeneralCitiesBinding):RecyclerView.ViewHolder(binding.root) {
-
-
     fun bind(placesLaPaz: PlacesToVisit) {
-            Glide.with(itemView)
+        binding.place = placesLaPaz
+         /*   Glide.with(itemView)
                 .load(placesLaPaz.urlImage)
                 .transform(CenterCrop(), RoundedCorners(24))
                 .into(binding.laPazPlaceImage)
+
         binding.laPazPlaceName.text = placesLaPaz.placeName
         binding.laPazPlaceShortDescription.text = placesLaPaz.placeDescription
-        binding.laPazPlaceLikes.text = "${placesLaPaz.likeCont}"
+        binding.laPazPlaceLikes.text = "${placesLaPaz.likeCont}"*/
     }
 }
