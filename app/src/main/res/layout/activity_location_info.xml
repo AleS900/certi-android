@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <data>
         <variable
             name="atraction"
             type="com.upb.aroundme.model.PlacesToVisit" />
     </data>
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ui.activities.LocationInfoActivity">
@@ -21,10 +21,11 @@
                 android:id="@+id/imageHeader"
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
+                android:scaleType="center"
+                app:layout_constraintTop_toTopOf="parent"
                 app:srcUrl="@{atraction.urlImage}"
                 tools:background="@drawable/valle"
-                android:scaleType="center"
-                app:layout_constraintTop_toTopOf="parent" />
+                tools:layout_editor_absoluteX="0dp" />
 
             <TextView
                 android:id="@+id/textHeader"
@@ -55,23 +56,23 @@
                 android:id="@+id/imageLocation"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_marginStart="10dp"
-                app:layout_constraintBottom_toBottomOf="@+id/imageHeader"
-                app:layout_constraintStart_toEndOf="@+id/textHeader"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/location_pointer_white"
-                tools:ignore="MissingConstraints"
-                android:layout_marginBottom="8dp"/>
+                tools:ignore="MissingConstraints" />
 
             <ImageView
                 android:id="@+id/imageHeart"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="10dp"
-                app:layout_constraintBottom_toBottomOf="@+id/imageHeader"
+                android:layout_marginTop="15dp"
                 app:layout_constraintStart_toEndOf="@+id/imageLocation"
+                app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/heart_icon_white"
-                tools:ignore="MissingConstraints"
-                android:layout_marginBottom="8dp"/>
+                tools:ignore="MissingConstraints" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

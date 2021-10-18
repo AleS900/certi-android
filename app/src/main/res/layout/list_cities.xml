@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <data>
         <variable
             name="elemento"
             type="com.upb.aroundme.model.City" />
     </data>
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -33,14 +33,15 @@
             android:id="@+id/tvNameCity"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:text="@{elemento.nameCity}"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-            app:autoSizeTextType="uniform"
             android:textColor="@color/white"
+            app:autoSizeMaxTextSize="20sp"
+            app:autoSizeTextType="uniform"
             app:layout_constraintBottom_toBottomOf="@+id/ivCityPicture"
             app:layout_constraintEnd_toEndOf="@+id/ivCityPicture"
             app:layout_constraintStart_toStartOf="@+id/ivCityPicture"
-            tools:text="La Paz"
-            android:text="@{elemento.nameCity}"/>
+            tools:text="La Paz" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

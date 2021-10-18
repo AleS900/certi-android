@@ -4,18 +4,14 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.upb.aroundme.ui.interfaces.CitiesCallBack
 import com.upb.aroundme.ui.adapters.CitiesListAdapter
-import com.upb.aroundme.R
 import com.upb.aroundme.data.CitiesDataSource
 import com.upb.aroundme.databinding.FragmentCitiesListBinding
-import com.upb.aroundme.model.City
-import com.upb.aroundme.ui.base.StepBaseFragment
 
-class CitiesListFragment: StepBaseFragment() {
+class CitiesListFragment: Fragment() {
     private val citiesListAdapter= CitiesListAdapter()
     private lateinit var binding: FragmentCitiesListBinding
 

@@ -4,21 +4,16 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.LinearSnapHelper
 import com.upb.aroundme.databinding.FragmentPlacesGeneralCitiesBinding
-import com.upb.aroundme.model.City
-import com.upb.aroundme.ui.activities.GeneralCityActivity
-import com.upb.aroundme.ui.activities.GeneralCityActivityArgs
 import com.upb.aroundme.ui.adapters.LaPazListAdapter
-import com.upb.aroundme.ui.base.StepBaseFragment
 import com.upb.aroundme.ui.viewmodels.PlacesListViewModel
 
-class GeneralPlacesFragment: StepBaseFragment() {
+class GeneralPlacesFragment: Fragment() {
     private val laPazPlacesAdapter = LaPazListAdapter()
     private lateinit var binding : FragmentPlacesGeneralCitiesBinding
     private val placesListViewModel: PlacesListViewModel by activityViewModels()
