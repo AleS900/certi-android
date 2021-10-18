@@ -1,10 +1,9 @@
-package com.upb.aroundme.ui.activities
+package com.upb.aroundme.ui.login.activity
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.upb.aroundme.R
-import com.upb.aroundme.ui.fragments.LoginFragment
+import com.upb.aroundme.ui.login.fragment.LoginFragment
 
 class LoginActivity : AppCompatActivity() {
     private val loginFragment = LoginFragment()

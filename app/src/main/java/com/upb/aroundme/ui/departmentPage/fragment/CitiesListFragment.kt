@@ -1,4 +1,4 @@
-package com.upb.aroundme.ui.fragments
+package com.upb.aroundme.ui.departmentPage.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.upb.aroundme.ui.adapters.CitiesListAdapter
-import com.upb.aroundme.data.CitiesDataSource
+import com.upb.aroundme.data.DepartmentDataSource
 import com.upb.aroundme.databinding.FragmentCitiesListBinding
 
 class CitiesListFragment: Fragment() {
@@ -29,7 +29,7 @@ class CitiesListFragment: Fragment() {
         binding.rvCities.adapter = citiesListAdapter
         val layoutManager = GridLayoutManager(context, 2)
         binding.rvCities.layoutManager = layoutManager
-        citiesListAdapter.addAll(CitiesDataSource.departementsList)
+        citiesListAdapter.addAll(DepartmentDataSource.departmentList)
         citiesListAdapter.setOnCityClickListener {
             val directions = CitiesListFragmentDirections.actionCitiesListFragmentToGeneralCityActivity(it)
             findNavController().navigate(directions)

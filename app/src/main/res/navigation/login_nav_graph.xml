@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.upb.aroundme.ui.fragments.LoginFragment"
+        android:name="com.upb.aroundme.ui.login.fragment.LoginFragment"
         android:label="LoginFragment"
         tools:layout="@layout/fragment_login"
         >
@@ -18,7 +18,7 @@
     </fragment>
     <activity
         android:id="@+id/citiesActivity"
-        android:name="com.upb.aroundme.ui.activities.CitiesActivity"
+        android:name="com.upb.aroundme.ui.departmentPage.activity.CitiesActivity"
         android:label="activity_city_list"
         tools:layout="@layout/activity_city_list" />
 </navigation>

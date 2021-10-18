@@ -1,4 +1,4 @@
-package com.upb.aroundme.ui.fragments
+package com.upb.aroundme.ui.login.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater

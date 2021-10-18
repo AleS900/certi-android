@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/citiesListFragment"
-        android:name="com.upb.aroundme.ui.fragments.CitiesListFragment"
+        android:name="com.upb.aroundme.ui.departmentPage.fragment.CitiesListFragment"
         tools:layout="@layout/fragment_cities_list"
         android:label="CitiesListFragment" >
         <action
@@ -17,9 +17,9 @@
 
     <activity
         android:id="@+id/generalCityActivity"
-        android:name="com.upb.aroundme.ui.activities.GeneralCityActivity"
+        android:name="com.upb.aroundme.ui.placesToVisitPage.activity.PlacesActivity"
         android:label="activity_lp_places"
-        tools:layout="@layout/activity_general_cities_places" >
+        tools:layout="@layout/activity_places" >
         <argument
             android:name="cityInfo"
             app:argType="com.upb.aroundme.model.City" />

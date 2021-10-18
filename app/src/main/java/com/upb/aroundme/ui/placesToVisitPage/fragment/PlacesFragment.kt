@@ -1,4 +1,4 @@
-package com.upb.aroundme.ui.fragments
+package com.upb.aroundme.ui.placesToVisitPage.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,13 +9,13 @@ import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.LinearSnapHelper
-import com.upb.aroundme.databinding.FragmentPlacesGeneralCitiesBinding
-import com.upb.aroundme.ui.adapters.LaPazListAdapter
+import com.upb.aroundme.databinding.FragmentPlacesListBinding
+import com.upb.aroundme.ui.adapters.PlaceToVisitAdapter
 import com.upb.aroundme.ui.viewmodels.PlacesListViewModel
 
-class GeneralPlacesFragment: Fragment() {
-    private val laPazPlacesAdapter = LaPazListAdapter()
-    private lateinit var binding : FragmentPlacesGeneralCitiesBinding
+class PlacesFragment: Fragment() {
+    private val laPazPlacesAdapter = PlaceToVisitAdapter()
+    private lateinit var binding : FragmentPlacesListBinding
     private val placesListViewModel: PlacesListViewModel by activityViewModels()
 
     override fun onCreateView(
@@ -23,7 +23,7 @@ class GeneralPlacesFragment: Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentPlacesGeneralCitiesBinding.inflate(inflater,container,false)
+        binding = FragmentPlacesListBinding.inflate(inflater,container,false)
         return binding.root
     }
 
@@ -36,7 +36,7 @@ class GeneralPlacesFragment: Fragment() {
         LinearSnapHelper().attachToRecyclerView(binding.rvPlaceLP)
 
         laPazPlacesAdapter.setOnPlaceToVisitClickListener {
-            val directions = GeneralPlacesFragmentDirections.actionGeneralPlacesFragmentToLocationInfoActivity(it)
+            val directions = PlacesFragmentDirections.actionGeneralPlacesFragmentToLocationInfoActivity(it)
             findNavController().navigate(directions)
         }
 

@@ -1,10 +1,11 @@
-package com.upb.aroundme.ui.activities
+package com.upb.aroundme.ui.splash
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import com.upb.aroundme.R
+import com.upb.aroundme.ui.login.activity.LoginActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

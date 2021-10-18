@@ -2,8 +2,8 @@ package com.upb.aroundme.data
 
 import com.upb.aroundme.model.PlacesToVisit
 
-object LaPazPlacesDataSource {
-    private var  laPazPlacesList = mutableListOf(
+object PlacesDataSource {
+    private var  PlacesList = mutableListOf(
         // La Paz
         PlacesToVisit(
             cityName = "La Paz",
@@ -520,18 +520,18 @@ object LaPazPlacesDataSource {
     )
 
     fun getPlacesList(): List<PlacesToVisit>{
-        return laPazPlacesList
+        return PlacesList
     }
 
     fun setPlacesList(laPazPlacesList: List<PlacesToVisit>){
-        this.laPazPlacesList = laPazPlacesList.toMutableList()
+        this.PlacesList = laPazPlacesList.toMutableList()
     }
 
 
 
 
     fun getPlaceListForCity(city : String): List<PlacesToVisit>{
-        return laPazPlacesList.filter {
+        return PlacesList.filter {
             it.cityName.toLowerCase().equals(city.toLowerCase())
         }
     }

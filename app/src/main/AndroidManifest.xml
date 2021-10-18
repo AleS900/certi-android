@@ -12,23 +12,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AroundMe">
         <activity
-            android:name=".ui.activities.LocationInfoActivity"
+            android:name=".ui.placeInformationPage.LocationInfoActivity"
             android:exported="true"
-            android:parentActivityName=".ui.activities.GeneralCityActivity"/>
+            android:parentActivityName=".ui.placesToVisitPage.activity.PlacesActivity"/>
         <activity
-            android:name="com.upb.aroundme.ui.activities.GeneralCityActivity"
+            android:name="com.upb.aroundme.ui.placesToVisitPage.activity.PlacesActivity"
             android:exported="true"
-            android:parentActivityName=".ui.activities.CitiesActivity"/>
+            android:parentActivityName=".ui.departmentPage.activity.CitiesActivity"/>
         <activity
-            android:name=".ui.activities.CitiesActivity"
+            android:name=".ui.departmentPage.activity.CitiesActivity"
             android:exported="true"
-            android:parentActivityName=".ui.activities.LoginActivity"/>
+            android:parentActivityName=".ui.login.activity.LoginActivity"/>
         <activity
-            android:name=".ui.activities.LoginActivity"
+            android:name=".ui.login.activity.LoginActivity"
             android:exported="true"
-            android:parentActivityName=".ui.activities.MainActivity"/>
+            android:parentActivityName=".ui.splash.MainActivity"/>
         <activity
-            android:name="com.upb.aroundme.ui.activities.MainActivity"
+            android:name="com.upb.aroundme.ui.splash.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

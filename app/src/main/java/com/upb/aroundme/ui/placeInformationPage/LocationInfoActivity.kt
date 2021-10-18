@@ -1,12 +1,8 @@
-package com.upb.aroundme.ui.activities
+package com.upb.aroundme.ui.placeInformationPage
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.appcompat.view.menu.MenuView
-import androidx.navigation.NavArgs
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.navArgs
-import com.bumptech.glide.Glide
-import com.upb.aroundme.R
 import com.upb.aroundme.databinding.ActivityLocationInfoBinding
 import com.upb.aroundme.model.PlacesToVisit
 

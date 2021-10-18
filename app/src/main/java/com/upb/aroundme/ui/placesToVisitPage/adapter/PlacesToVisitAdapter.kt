@@ -4,12 +4,12 @@ import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.upb.aroundme.databinding.ListPlacesGeneralCitiesBinding
+import com.upb.aroundme.databinding.ListPlacesBinding
 import com.upb.aroundme.model.PlacesToVisit
 
 
 
-class LaPazListAdapter: RecyclerView.Adapter<PlacesToVisitListViewHolder>() {
+class PlaceToVisitAdapter: RecyclerView.Adapter<PlacesToVisitListViewHolder>() {
     private val placesToVisitList: MutableList<PlacesToVisit> = mutableListOf()
     private var onPlaceItemClickListener : ((places:PlacesToVisit)->Unit)?=null
 
@@ -24,7 +24,7 @@ class LaPazListAdapter: RecyclerView.Adapter<PlacesToVisitListViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PlacesToVisitListViewHolder {
-        val binding = ListPlacesGeneralCitiesBinding.inflate(LayoutInflater.from(parent.context),parent,false)
+        val binding = ListPlacesBinding.inflate(LayoutInflater.from(parent.context),parent,false)
         return PlacesToVisitListViewHolder(binding)
     }
 
@@ -43,7 +43,7 @@ class LaPazListAdapter: RecyclerView.Adapter<PlacesToVisitListViewHolder>() {
     }
 }
 
-class PlacesToVisitListViewHolder(val binding: ListPlacesGeneralCitiesBinding):RecyclerView.ViewHolder(binding.root) {
+class PlacesToVisitListViewHolder(val binding: ListPlacesBinding):RecyclerView.ViewHolder(binding.root) {
     fun bind(places: PlacesToVisit) {
         binding.place = places
     }

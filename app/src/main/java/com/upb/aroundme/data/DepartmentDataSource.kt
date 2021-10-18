@@ -2,8 +2,8 @@ package com.upb.aroundme.data
 
 import com.upb.aroundme.model.City
 
-object CitiesDataSource {
-    var departementsList = mutableListOf(
+object DepartmentDataSource {
+    var departmentList = mutableListOf(
         City(
             nameCity = "La Paz",
             pictureUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/La_Paz_Skyline.jpg/260px-La_Paz_Skyline.jpg"
@@ -43,15 +43,15 @@ object CitiesDataSource {
     )
 
     fun getPostList(): List<City> {
-        return departementsList
+        return departmentList
     }
 
     fun setPostList(postList: List<City>) {
-        this.departementsList = departementsList.toMutableList()
+        this.departmentList = departmentList.toMutableList()
     }
 
     fun searchPosts(query: String): List<City> {
-        return departementsList.filter {
+        return departmentList.filter {
             it.nameCity.toLowerCase().contains(query.toLowerCase())
         }
     }
