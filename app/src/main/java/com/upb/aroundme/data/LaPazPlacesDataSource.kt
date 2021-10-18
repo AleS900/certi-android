@@ -527,6 +527,9 @@ object LaPazPlacesDataSource {
         this.laPazPlacesList = laPazPlacesList.toMutableList()
     }
 
+
+
+
     fun getPlaceListForCity(city : String): List<PlacesToVisit>{
         return laPazPlacesList.filter {
             it.cityName.toLowerCase().equals(city.toLowerCase())
