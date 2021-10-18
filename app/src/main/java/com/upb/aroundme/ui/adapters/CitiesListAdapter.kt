@@ -49,10 +49,6 @@ class CitiesListAdapter: RecyclerView.Adapter<CitiesListViewHolder>()
 class CitiesListViewHolder(val binding : ListCitiesBinding):RecyclerView.ViewHolder(binding.root){
 
     fun bind(city: City){
-        Glide.with(itemView)
-            .load(city.pictureUrl)
-            .transform(CenterCrop(), RoundedCorners(40))
-            .into(binding.ivCityPicture)
-        binding.tvNameCity.text=city.nameCity
+        binding.elemento= city
     }
 }
