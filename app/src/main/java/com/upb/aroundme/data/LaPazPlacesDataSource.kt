@@ -18,7 +18,7 @@ object LaPazPlacesDataSource {
             placeName = "Basílica de San Francisco",
             urlImage = "https://www.ibolivia.org/wp-content/uploads/2019/07/basilica-de-san-francisco-la-paz.jpg",
             placeDescription = "La basílica de piedra labrada de San Francisco en La Paz, Bolivia, refleja una atractiva mezcla de tendencias españolas y mestizas (indígenas-españolas) del siglo XVI.",
-            information = "Basílica de San Francisco",
+            information = "TODO",
             likeCont = 225
         ),
         PlacesToVisit(
@@ -26,7 +26,7 @@ object LaPazPlacesDataSource {
             placeName = "Calle Jaen",
             urlImage = "https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/27/74/25.jpg",
             placeDescription = "La Calle Jaén es la mejor calle colonial de La Paz, y los 10 museos que posee se pueden visitados fácilmente en una sola visita.",
-            information = "Calle Jaen",
+            information = "TODO",
             likeCont = 200
         ),
         PlacesToVisit(
@@ -34,7 +34,7 @@ object LaPazPlacesDataSource {
             placeName = "Parque Zoológico Municipal Vesty Pakos Sofro",
             urlImage = "https://lapaz.bolivialocal.net/imagen/e/2017/2/i151/parque-zoologico-municipal-paz-6-mx.jpg",
             placeDescription = "Ubicado en la zona de Mallasa a 14 km del centro paceño, tiene un área de 22.4 hectáreas y un clima templado ideal para la conservación de la fauna.",
-            information = "Parque Zoológico Municipal Vesty Pakos Sofro",
+            information = "TODO",
             likeCont = 180
         ),
         PlacesToVisit(
@@ -42,7 +42,7 @@ object LaPazPlacesDataSource {
             placeName = "Illimani",
             urlImage = "https://elpotosi.net/img/contents/images_980/2016/11/25/nota27268_imagen24517.jpg",
             placeDescription = "Illimani es el pico más alto (6.438 metros) en la Cordillera Real del oeste de Bolivia. ",
-            information = "Illimani",
+            information = "TODO",
             likeCont = 175
         ),
         PlacesToVisit(
@@ -50,7 +50,7 @@ object LaPazPlacesDataSource {
             placeName = "Casa Murillo",
             urlImage = "https://media-cdn.tripadvisor.com/media/photo-s/11/83/41/a1/caption.jpg",
             placeDescription = "Una vez hogar de Don Pedro Domingo Murillo, líder de la Revolución de La Paz del 16 de julio de 1809, en Bolivia, la Casa de Murillo exhibe colecciones de arte y muebles coloniales, textiles, medicinas, instrumentos musicales y artículos para el hogar de vidrio y plata. ",
-            information = "Casa Murillo",
+            information = "TODO",
             likeCont = 125
         ),
         PlacesToVisit(
@@ -58,15 +58,7 @@ object LaPazPlacesDataSource {
             placeName = "Museo De La Coca",
             urlImage = "https://a.travel-assets.com/findyours-php/viewfinder/images/res40/65000/65275-Museo-De-La-Coca.jpg",
             placeDescription = "El Museo de la Coca en La Paz,  explora el papel de la hoja sagrada en las sociedades tradicionales.",
-            information = "Museo De La Coca",
-            likeCont = 125
-        ),
-        PlacesToVisit(
-            cityName = "Cochabamba",
-            placeName = "cochabambatest",
-            urlImage = "https://a.travel-assets.com/findyours-php/viewfinder/images/res40/65000/65275-Museo-De-La-Coca.jpg",
-            placeDescription = "El Museo de la Coca en La Paz,  explora el papel de la hoja sagrada en las sociedades tradicionales.",
-            information = "cochabamba info",
+            information = "TODO",
             likeCont = 125
         ),
         // Cochabamba
@@ -294,6 +286,234 @@ object LaPazPlacesDataSource {
             placeName = "Manquiri",
             urlImage = "https://boliviatravelsite.com/Images/Attractionphotos/manquiri-001.jpg",
             placeDescription = "En el pasado, este lugar solía ser adorado por sus emanaciones de vapor de las aguas termales que fluyen bajo tierra.",
+            information = "TODO",
+            likeCont = 125
+        ),
+        //Tarija
+        PlacesToVisit(
+            cityName = "Tarija",
+            placeName = "Casa Dorada",
+            urlImage = "https://boliviatravelsite.com/Images/Attractionphotos/casa-dorada-tarija-004.jpg",
+            placeDescription = "La Casa Dorada tiene como una de sus principales características su diseño altamente simétrico. El frente se asemeja a una sola teja compuesta por varias columnas.",
+            information = "TODO",
+            likeCont = 350
+        ),
+        PlacesToVisit(
+            cityName = "Tarija",
+            placeName = "Avenida Las Américas",
+            urlImage = "https://boliviatravelsite.com/Images/Attractionphotos/las-americas-tarija-01.jpg",
+            placeDescription = "La Avenida Las Américas ofrece un extenso y hermoso paseo. Situada a orillas del río Guadalquivir, rodea la parte sur de la ciudad.",
+            information = "TODO",
+            likeCont = 225
+        ),
+        PlacesToVisit(
+            cityName = "Tarija",
+            placeName = "Iglesia de San Francisco",
+            urlImage = "https://boliviatravelsite.com/Images/Attractionphotos/Tarija/sanfranciscochurch.jpg",
+            placeDescription = "La construcción de la Iglesia de San Francisco se inició en el siglo XVII, aunque su fachada actual corresponde al siglo XVIII. En 1610, los responsables del templo encabezaron la fundación de La Cofradía de Nuestra Señora de la Visitación, compuesta por los esclavos negros liberados residentes en la ciudad.",
+            information = "TODO",
+            likeCont = 200
+        ),
+        PlacesToVisit(
+            cityName = "Tarija",
+            placeName = "Iglesia San Roque",
+            urlImage = "https://boliviatravelsite.com/Images/Attractionphotos/Tarija/sanroque.jpg",
+            placeDescription = "La Iglesia de San Roque (la Iglesia de San Roque) está construida sobre lanchas de madera, dispuestas en forma de columnas. El templo tiene tres vasijas de madera en madera y aleros exteriores.",
+            information = "TODO",
+            likeCont = 180
+        ),
+        PlacesToVisit(
+            cityName = "Tarija",
+            placeName = "Tomatas",
+            urlImage = "https://boliviatravelsite.com/Images/Attractionphotos/tomatitas-004.jpg",
+            placeDescription = "Tomatas es un balneario natural ubicado a 5 Km. de la ciudad de Tarija. Sus playas están bañadas por aguas de los ríos Guadalquivir y Erquis. Tomatas tiene un puente colgante sobre él y un pequeño parque con un bosque en él, un sitio perfecto para un picnic inolvidable.",
+            information = "TODO",
+            likeCont = 175
+        ),
+        PlacesToVisit(
+            cityName = "Tarija",
+            placeName = "San Lorenzo",
+            urlImage = "https://boliviatravelsite.com/Images/Attractionphotos/Tarija/sanlorenzo.jpg",
+            placeDescription = "En este pueblo se encuentra la casa de Eustaquio 'Moto' Méndez, héroe de la lucha de Bolivia por la independencia del dominio español y una hermosa iglesia de estilo arqueológico de 1709.",
+            information = "TODO",
+            likeCont = 125
+        ),
+        PlacesToVisit(
+            cityName = "Tarija",
+            placeName = "Coimata",
+            urlImage = "https://boliviatravelsite.com/Images/Attractionphotos/Tarija/coimata-tarija-003.jpg",
+            placeDescription = "Ubicada a 15 kilómetros de la ciudad de Tarija, Coimata es un atractivo natural que cuenta con una caída de agua cristalina, que desciende de dos montañas. ",
+            information = "TODO",
+            likeCont = 125
+        ),
+        //Chuquisaca
+        PlacesToVisit(
+            cityName = "Chuquisaca",
+            placeName = "Tarabuco",
+            urlImage = "https://boliviatravelsite.com/Images/Attractionphotos/tarabuco-002.jpg",
+            placeDescription = "Tarabuco, cuna del Phujllay, se encuentra a 60 Km. de Sucre, Bolivia. Tarabuco tiene una feria dominical muy colorida donde los lugareños exhiben atuendos, cascos y ponchos de varios colores, diseños y estampados.",
+            information = "TODO",
+            likeCont = 350
+        ),
+        PlacesToVisit(
+            cityName = "Chuquisaca",
+            placeName = "Casa de la Libertad",
+            urlImage = "https://boliviatravelsite.com/Images/Attractionphotos/casa-de-la-libertad-sucre-004.jpg",
+            placeDescription = "El 6 de agosto de 1825, los luchadores por la libertad de Bolivia se reunieron en la Casa de la Libertad para declarar la independencia de España. Puede visitar exactamente la misma sala donde se reunieron los libertadores.",
+            information = "TODO",
+            likeCont = 225
+        ),
+        PlacesToVisit(
+            cityName = "Chuquisaca",
+            placeName = "Castillo de la Glorieta",
+            urlImage = "https://boliviatravelsite.com/Images/Attractionphotos/glorieta-castle-sucre-008.jpg",
+            placeDescription = "El Castillo de la Glorieta en Sucre, Bolivia, es un atractivo único que perteneció a Don Francisco de Argandona. El Castillo de la Glorieta fue construido a finales del siglo XIX y exhibe varios estilos arquitectónicos: mudéjar o mahometano, neoclásico, barroco y neogótico.",
+            information = "TODO",
+            likeCont = 200
+        ),
+        PlacesToVisit(
+            cityName = "Chuquisaca",
+            placeName = "Parque Bolivar",
+            urlImage = "https://boliviatravelsite.com/Images/Attractionphotos/Sucre/parque-bolivar-sucre-009.jpg",
+            placeDescription = "El Parque Bolívar en Sucre, Bolivia, es un parque al aire libre que tiene una interesante colección de réplicas en miniatura de famosos monumentos franceses como la Torre Eiffel, el Arco del Triunfo y el Obelisco de Buenos Aires.",
+            information = "TODO",
+            likeCont = 180
+        ),
+        PlacesToVisit(
+            cityName = "Chuquisaca",
+            placeName = "Convento de la Recoleta",
+            urlImage = "https://boliviatravelsite.com/Images/Attractionphotos/recoleta-sucre-005.jpg",
+            placeDescription = "El Convento de La Recoleta domina el paisaje de la ciudad de Sucre en Bolivia, descansando al pie de la montaña Churuquella. El Mirador de Recoleta está ubicado en lo alto de uno de los siete cerros donde se fundó la ciudad de Sucre.",
+            information = "TODO",
+            likeCont = 175
+        ),
+        PlacesToVisit(
+            cityName = "Chuquisaca",
+            placeName = "Padilla",
+            urlImage = "https://boliviatravelsite.com/Images/Attractionphotos/cretaceaous-park-006.jpg",
+            placeDescription = "El tradicional Carnaval y los restos arqueológicos de los alrededores, hacen del pueblo de Padilla en Bolivia uno de los principales atractivos turísticos de Chuquisaca.",
+            information = "TODO",
+            likeCont = 125
+        ),
+        PlacesToVisit(
+            cityName = "Chuquisaca",
+            placeName = "Parque Cretácico, Cal Orck'o",
+            urlImage = "https://boliviatravelsite.com/Images/Attractionphotos/padilla-001.jpg",
+            placeDescription = "El Parque Cretácico (Cal Orck'o) es definitivamente una de las atracciones más singulares de Bolivia. Hace 65 millones de años, el sitio de la cantera de cemento Fancesa de Sucre, a seis kilómetros del centro, era el lugar ideal para los dinosaurios grandes y escamosos.",
+            information = "TODO",
+            likeCont = 125
+        ),
+        //Beni
+        PlacesToVisit(
+            cityName = "Beni",
+            placeName = "Parque Nacional Madidi",
+            urlImage = "https://boliviatravelsite.com/Images/Attractionphotos/madidi-01.jpg",
+            placeDescription = "El Parque Nacional Madidi está ubicado al Noreste de La Paz, Bolivia. Madidi es el área protegida con mayor diversidad de flora: 5,000 a 6,000 especies.",
+            information = "TODO",
+            likeCont = 350
+        ),
+        PlacesToVisit(
+            cityName = "Beni",
+            placeName = "Riberalta",
+            urlImage = "https://boliviatravelsite.com/Images/Attractionphotos/riberalta-006.jpg",
+            placeDescription = "Riberalta se encuentra en la parte noroeste de Bolivia, en el lugar donde se unen los ríos Beni y Madre de Dios. Las actividades turísticas incluyen la visita a los centros de producción de castaña o las zonas donde se recolecta el caucho y el contacto con la cultura indígena.",
+            information = "TODO",
+            likeCont = 225
+        ),
+        PlacesToVisit(
+            cityName = "Beni",
+            placeName = "Rurrenabaque",
+            urlImage = "https://boliviatravelsite.com/Images/Attractionphotos/Rurrenabaque-01.jpg",
+            placeDescription = "Rurrenabaque (o simplemente Rurre) es un pequeño pueblo (población 15.000) a orillas del Río Beni en la cuenca del Amazonas boliviano. ",
+            information = "TODO",
+            likeCont = 200
+        ),
+        PlacesToVisit(
+            cityName = "Beni",
+            placeName = "Catedral de Trinidad",
+            urlImage = "https://boliviatravelsite.com/Images/Attractionphotos/trinidad-cathedral-beni-003.jpg",
+            placeDescription = "Construido en 1931 en estilo académico. Esta iglesia fue construida en su mayoría con escombros, pero tiene varios objetos valiosos considerados antigüedades y también por sus características artísticas. Algunas piezas interesantes que vale la pena mencionar incluyen pinturas como Nuestra Señora de Belén.",
+            information = "TODO",
+            likeCont = 180
+        ),
+        PlacesToVisit(
+            cityName = "Beni",
+            placeName = "Casco Viejo",
+            urlImage = "https://boliviatravelsite.com/Images/Attractionphotos/cascoviejo1.png",
+            placeDescription = "",
+            information = "TODO",
+            likeCont = 175
+        ),
+        PlacesToVisit(
+            cityName = "Beni",
+            placeName = "Loma Suárez",
+            urlImage = "https://scontent.flpb1-2.fna.fbcdn.net/v/t31.18172-8/21056163_340391273087446_4110770562591213854_o.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=8lxl_2kPNY4AX-d7zY2&_nc_ht=scontent.flpb1-2.fna&oh=00b8e9157ccba5278cf66422e173a016&oe=61955FE0",
+            placeDescription = "En la parte norte se encuentra el casco antiguo de la ciudad de Trinidad que tiene construcciones de la época colonial. Sus amplias calles pavimentadas y amplios pasillos protegen a las personas de los fuertes rayos solares característicos del clima tropical.",
+            information = "TODO",
+            likeCont = 125
+        ),
+        PlacesToVisit(
+            cityName = "Beni",
+            placeName = "San Ignacio de Moxos",
+            urlImage = "https://boliviatravelsite.com/Images/Attractionphotos/san-ignacio-de-moxos-007.jpg",
+            placeDescription = "Esta es la capital folclórica del Beni. Durante todo el año se pueden practicar deportes como natación, esquí acuático, pesca y senderismo. Este pueblo es famoso por su fiesta anual en la que los vecinos se disfrazan de 'toros' y 'mamas' y se dirigen a las calles principales en devoción a San Ignacio. ",
+            information = "TODO",
+            likeCont = 125
+        ),
+        //Pando
+        PlacesToVisit(
+            cityName = "Pando",
+            placeName = "Reserva de Vida Silvestre Manuripi",
+            urlImage = "https://boliviatravelsite.com/Images/Attractionphotos/manuripi-005.jpg",
+            placeDescription = "La Reserva de Vida Silvestre Manuripu es un área extensa rodeada de ríos, el acceso en época de lluvias es difícil, la reserva tiene gran variedad de fauna, especialmente aves, la extracción de madera es una de las actividades más importantes de la zona, hermosa y salvaje.",
+            information = "TODO",
+            likeCont = 350
+        ),
+        PlacesToVisit(
+            cityName = "Pando",
+            placeName = "Porvenir",
+            urlImage = "https://boliviatravelsite.com/Images/Attractionphotos/porvenir1.png",
+            placeDescription = "Los paisajes verdes y alegres de Porvenir son impresionantes. Es posible practicar actividades como fotografía y observación de fauna y flora.",
+            information = "TODO",
+            likeCont = 225
+        ),
+        PlacesToVisit(
+            cityName = "Pando",
+            placeName = "Chive",
+            urlImage = "https://boliviamia.net/Images/ArticlePhotos/mejor-momento-para-visitar-el-salar-01.jpg",
+            placeDescription = "Chieve es un lugar de inmejorable belleza con frondosa vegetación. Está en la margen izquierda del gran río Madre de Dios. Aquí el visitante podrá admirar el hermoso trabajo en madera y el esplendor del oro que abunda en Chieve.",
+            information = "TODO",
+            likeCont = 200
+        ),
+        PlacesToVisit(
+            cityName = "Pando",
+            placeName = "Nueva Esperanza o Araras",
+            urlImage = "https://www.researchgate.net/profile/Vincent-Vos/publication/313206156/figure/fig3/AS:460690411528192@1486848561592/Foto-aerea-de-Nueva-Esperanza-en-la-frontera-de-Pando-con-el-estado-de-Rondonia-Brasil.png",
+            placeDescription = "Los habitantes de Nueva Esperanza o Araras se dedican a la explotación de oro. Se ubica en la margen izquierda del río Madera, en una zona dotada de hermosos paisajes.",
+            information = "TODO",
+            likeCont = 180
+        ),
+        PlacesToVisit(
+            cityName = "Pando",
+            placeName = "Rio Sena",
+            urlImage = "https://i.pinimg.com/originals/d8/b7/95/d8b795bd31fbcef11ad2de1dbd470946.jpg",
+            placeDescription = "Rio Sena es un cuartel muy antiguo. El visitante puede ver los almacenes y viviendas de la época en que la producción de caucho alcanzó su punto máximo a finales del siglo XIX.",
+            information = "TODO",
+            likeCont = 175
+        ),
+        PlacesToVisit(
+            cityName = "Pando",
+            placeName = "Puerto Rico",
+            urlImage = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Rio_Orthon%2C_Pando%2C_Bolivia.jpg/420px-Rio_Orthon%2C_Pando%2C_Bolivia.jpg",
+            placeDescription = "Desde el pueblo se puede observar la espectacular confluencia de los ríos Tahuamanu y Manuripi. El visitante podrá apreciar el trabajo realizado con productos como la castaña y el caucho.",
+            information = "TODO",
+            likeCont = 125
+        ),
+        PlacesToVisit(
+            cityName = "Pando",
+            placeName = "Conquista",
+            urlImage = "http://cd1.eju.tv/wp-content/uploads/2014/08/lagobay_thumb.jpg",
+            placeDescription = "La Conquista fue un cuartel importante para el caucho. En la actualidad es posible visitar los lugares que aportaron mucha riqueza al departamento. El visitante también puede ver las herramientas utilizadas para trabajar en la goma.",
             information = "TODO",
             likeCont = 125
         )
