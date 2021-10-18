@@ -14,9 +14,14 @@
             android:id="@+id/action_citiesListFragment_to_generalCityActivity"
             app:destination="@id/generalCityActivity" />
     </fragment>
+
     <activity
         android:id="@+id/generalCityActivity"
         android:name="com.upb.aroundme.ui.activities.GeneralCityActivity"
         android:label="activity_lp_places"
-        tools:layout="@layout/activity_general_cities_places" />
+        tools:layout="@layout/activity_general_cities_places" >
+        <argument
+            android:name="cityInfo"
+            app:argType="com.upb.aroundme.model.City" />
+    </activity>
 </navigation>

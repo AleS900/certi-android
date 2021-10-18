@@ -4,9 +4,6 @@ import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
-import com.bumptech.glide.load.resource.bitmap.CenterCrop
-import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.upb.aroundme.databinding.ListPlacesGeneralCitiesBinding
 import com.upb.aroundme.model.PlacesToVisit
 import com.upb.aroundme.ui.interfaces.LaPazInfoCallback
@@ -18,11 +15,13 @@ class LaPazListAdapter: RecyclerView.Adapter<PlacesToVisitListViewHolder>() {
     private lateinit var callBack: LaPazInfoCallback
 
     @SuppressLint("NotifyDataSetChanged")
-    fun addAll(newElementList: MutableList<PlacesToVisit>) {
+    fun addAll(newElementList: List<PlacesToVisit>) {
         placesToVisitList.clear()
         placesToVisitList.addAll(newElementList)
         notifyDataSetChanged()
     }
+
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PlacesToVisitListViewHolder {
         val binding = ListPlacesGeneralCitiesBinding.inflate(LayoutInflater.from(parent.context),parent,false)
@@ -48,15 +47,8 @@ class LaPazListAdapter: RecyclerView.Adapter<PlacesToVisitListViewHolder>() {
 }
 
 class PlacesToVisitListViewHolder(val binding: ListPlacesGeneralCitiesBinding):RecyclerView.ViewHolder(binding.root) {
-    fun bind(placesLaPaz: PlacesToVisit) {
-        binding.place = placesLaPaz
-         /*   Glide.with(itemView)
-                .load(placesLaPaz.urlImage)
-                .transform(CenterCrop(), RoundedCorners(24))
-                .into(binding.laPazPlaceImage)
-
-        binding.laPazPlaceName.text = placesLaPaz.placeName
-        binding.laPazPlaceShortDescription.text = placesLaPaz.placeDescription
-        binding.laPazPlaceLikes.text = "${placesLaPaz.likeCont}"*/
+    fun bind(places: PlacesToVisit) {
+        binding.place = places
     }
+
 }

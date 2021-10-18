@@ -17,5 +17,9 @@
         android:id="@+id/locationInfoActivity"
         android:name="com.upb.aroundme.ui.activities.LocationInfoActivity"
         android:label="activity_location_info"
-        tools:layout="@layout/activity_location_info" />
+        tools:layout="@layout/activity_location_info" >
+        <argument
+            android:name="placeInfo"
+            app:argType="com.upb.aroundme.model.PlacesToVisit" />
+    </activity>
 </navigation>

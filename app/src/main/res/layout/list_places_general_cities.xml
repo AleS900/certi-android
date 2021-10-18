@@ -8,7 +8,6 @@
             type="com.upb.aroundme.model.PlacesToVisit" />
     </data>
 
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
