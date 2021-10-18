@@ -6,13 +6,13 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.upb.aroundme.databinding.ListPlacesGeneralCitiesBinding
 import com.upb.aroundme.model.PlacesToVisit
-import com.upb.aroundme.ui.interfaces.LaPazInfoCallback
+
 
 
 class LaPazListAdapter: RecyclerView.Adapter<PlacesToVisitListViewHolder>() {
     private val placesToVisitList: MutableList<PlacesToVisit> = mutableListOf()
     private var onPlaceItemClickListener : ((places:PlacesToVisit)->Unit)?=null
-    private lateinit var callBack: LaPazInfoCallback
+
 
     @SuppressLint("NotifyDataSetChanged")
     fun addAll(newElementList: List<PlacesToVisit>) {
@@ -37,9 +37,6 @@ class LaPazListAdapter: RecyclerView.Adapter<PlacesToVisitListViewHolder>() {
     }
     override fun getItemCount(): Int {
         return placesToVisitList.size
-    }
-    fun setCallBack(callBack: LaPazInfoCallback ){
-        this.callBack=callBack
     }
     fun setOnPlaceToVisitClickListener(onPlaceToVisitClickListener:((places:PlacesToVisit)->Unit)?){
         this.onPlaceItemClickListener=onPlaceToVisitClickListener
