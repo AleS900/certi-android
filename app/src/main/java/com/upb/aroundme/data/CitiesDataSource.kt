@@ -17,7 +17,7 @@ object CitiesDataSource {
             pictureUrl = "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Cristo_de_La_Concordia.jpg/295px-Cristo_de_La_Concordia.jpg"
         ),
         City(
-            nameCity = "Sucre",
+            nameCity = "Chuquisaca",
             pictureUrl = "https://ilamdir.org/blobs/ilamdir/w1280h720/328/2019/41/elpais.jpg"
         ),
         City(
