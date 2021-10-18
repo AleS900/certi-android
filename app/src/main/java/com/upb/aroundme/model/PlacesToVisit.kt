@@ -7,6 +7,7 @@ data class PlacesToVisit(
     val placeName: String,
     val urlImage : String,
     val placeDescription : String,
+    val information : String,
     val likeCont : Int
     ): Serializable
 

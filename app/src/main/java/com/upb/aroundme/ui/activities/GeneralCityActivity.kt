@@ -23,6 +23,7 @@ class GeneralCityActivity : AppCompatActivity() {
         binding= ActivityGeneralCitiesPlacesBinding.inflate(layoutInflater)
         setContentView(binding.root)
         city = args.cityInfo
+        binding.cityTitle= city
         placesListViewModel.updatesPlacesForCity(city.nameCity)
 
     }
