@@ -512,7 +512,7 @@ object LaPazPlacesDataSource {
         PlacesToVisit(
             cityName = "Pando",
             placeName = "Conquista",
-            urlImage = "http://cd1.eju.tv/wp-content/uploads/2014/08/lagobay_thumb.jpg",
+            urlImage = "https://mirabhayanderinfo.com/v2/uploads/images/image-not-found.jpg",
             placeDescription = "La Conquista fue un cuartel importante para el caucho. En la actualidad es posible visitar los lugares que aportaron mucha riqueza al departamento. El visitante también puede ver las herramientas utilizadas para trabajar en la goma.",
             information = "TODO",
             likeCont = 125
