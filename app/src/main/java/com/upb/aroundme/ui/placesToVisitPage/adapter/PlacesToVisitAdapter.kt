@@ -1,4 +1,4 @@
-package com.upb.aroundme.ui.adapters
+package com.upb.aroundme.ui.placesToVisitPage.adapter
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater

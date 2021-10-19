@@ -10,7 +10,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.LinearSnapHelper
 import com.upb.aroundme.databinding.FragmentPlacesListBinding
-import com.upb.aroundme.ui.adapters.PlaceToVisitAdapter
+import com.upb.aroundme.ui.placesToVisitPage.adapter.PlaceToVisitAdapter
 import com.upb.aroundme.ui.viewmodels.PlacesListViewModel
 
 class PlacesFragment: Fragment() {

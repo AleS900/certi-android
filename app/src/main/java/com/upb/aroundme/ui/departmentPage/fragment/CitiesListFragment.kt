@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
-import com.upb.aroundme.ui.adapters.CitiesListAdapter
+import com.upb.aroundme.ui.departmentPage.adapter.CitiesListAdapter
 import com.upb.aroundme.data.DepartmentDataSource
 import com.upb.aroundme.databinding.FragmentCitiesListBinding
 

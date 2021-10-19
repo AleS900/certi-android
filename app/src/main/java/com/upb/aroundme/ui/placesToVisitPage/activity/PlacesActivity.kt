@@ -15,7 +15,6 @@ class PlacesActivity : AppCompatActivity() {
     private lateinit var city: City
     private val args: PlacesActivityArgs by navArgs()
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding= ActivityPlacesBinding.inflate(layoutInflater)
@@ -23,7 +22,6 @@ class PlacesActivity : AppCompatActivity() {
         city = args.cityInfo
         binding.cityTitle= city
         placesListViewModel.updatesPlacesForCity(city.nameCity)
-
     }
 
 }

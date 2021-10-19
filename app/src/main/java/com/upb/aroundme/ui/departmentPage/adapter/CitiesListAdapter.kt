@@ -1,4 +1,4 @@
-package com.upb.aroundme.ui.adapters
+package com.upb.aroundme.ui.departmentPage.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

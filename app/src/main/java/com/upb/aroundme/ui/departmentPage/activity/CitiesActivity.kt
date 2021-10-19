@@ -8,7 +8,6 @@ class CitiesActivity : AppCompatActivity() {
 
     private lateinit var binding:ActivityCityListBinding
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding= ActivityCityListBinding.inflate(layoutInflater)
