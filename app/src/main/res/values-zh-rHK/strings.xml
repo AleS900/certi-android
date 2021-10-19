@@ -9,4 +9,5 @@
     <string name="put_password">密码</string>
     <string name="accept">接受</string>
     <string name="title_departments"> 你想知道什么？</string>
+    <string name="put_username">User Name</string>
 </resources>

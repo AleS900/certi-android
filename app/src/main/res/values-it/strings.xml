@@ -9,5 +9,5 @@
     <string name="put_password">Parola d´ordine</string>
     <string name="accept">Accettare</string>
     <string name="title_departments">Che cosa vorresti sapere?</string>
-
+    <string name="put_username">User Name</string>
 </resources>
