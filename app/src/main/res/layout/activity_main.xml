@@ -5,7 +5,7 @@
     android:id="@+id/activity_main"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@color/green"
+    android:background="@drawable/degrading_backround"
     tools:context=".ui.splash.MainActivity">
 
 
@@ -15,7 +15,7 @@
             android:layout_height="wrap_content"
             android:text="@string/aroundme"
             android:textAppearance="@style/aroundme"
-            android:textColor="?attr/colorOnPrimary"
+            android:textColor="@color/white"
             android:textSize="40sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
