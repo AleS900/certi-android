@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModel
 import com.upb.aroundme.data.PlacesDataSource
 
 class PlacesListViewModel: ViewModel() {
+
     val places = MutableLiveData(PlacesDataSource.getPlacesList())
 
     fun updatesPlacesForCity(city: String) {
