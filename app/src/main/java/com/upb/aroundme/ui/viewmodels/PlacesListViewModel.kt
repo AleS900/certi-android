@@ -2,13 +2,13 @@ package com.upb.aroundme.ui.viewmodels
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.upb.aroundme.data.PlacesDataSource
+import com.upb.aroundme.data.Places.PlacesRepository
 
 class PlacesListViewModel: ViewModel() {
-
-    val places = MutableLiveData(PlacesDataSource.getPlacesList())
+    val placesRepository = PlacesRepository()
+    val places = MutableLiveData(placesRepository.getAllPlacesList())
 
     fun updatesPlacesForCity(city: String) {
-        places.postValue(PlacesDataSource.getPlaceListForCity(city))
+        places.postValue(placesRepository.getPlaceListForCity(city))
     }
 }
