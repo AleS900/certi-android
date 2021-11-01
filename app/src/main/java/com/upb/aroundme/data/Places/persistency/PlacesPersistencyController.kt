@@ -524,6 +524,10 @@ class PlacesPersistencyController {
         return PlacesList
     }
 
+    fun savePlaces(places: List<PlacesToVisit>){
+        PlacesList = places as MutableList<PlacesToVisit> //****CASTEO EXTRAÑO****
+    }
+
     fun filterPlacesByCity(city : String): List<PlacesToVisit>{
         return PlacesList.filter {
             it.cityName.toLowerCase().equals(city.toLowerCase())
