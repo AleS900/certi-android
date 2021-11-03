@@ -9,7 +9,9 @@
     <string name="put_password">Κωδικός πρόσβασης</string>
     <string name="accept">Να αποδεχθεί</string>
     <string name="title_departments">Τι θα θέλατε να ξέρετε?</string>
-    <string name="put_username">User Name</string>
-    <string name="login">Login</string>
-    <string name="register">Register</string>
+    <string name="put_username">Ονομα χρήστη</string>
+    <string name="login">Σύνδεση</string>
+    <string name="register">Κανω ΕΓΓΡΑΦΗ</string>
+    <string name="back">Atrás</string>
+    <string name="error">ERROR Porfavor revise los datos ingresados o pruebe más tarde</string>
 </resources>

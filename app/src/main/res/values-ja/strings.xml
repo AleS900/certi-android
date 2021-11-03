@@ -9,7 +9,9 @@
     <string name="put_password">パスワード</string>
     <string name="accept">受け入れるために</string>
     <string name="title_departments">何を知りたいですか？</string>
-    <string name="put_username">User Name</string>
-    <string name="login">Login</string>
-    <string name="register">Register</string>
+    <string name="put_username">ユーザー名</string>
+    <string name="login">ログイン</string>
+    <string name="register">登録</string>
+    <string name="back">Atrás</string>
+    <string name="error">ERROR Porfavor revise los datos ingresados o pruebe más tarde</string>
 </resources>
