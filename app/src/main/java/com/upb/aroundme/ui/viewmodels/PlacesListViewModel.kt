@@ -19,11 +19,12 @@ class PlacesListViewModel: ViewModel() {
     val placesRepository =
         PlacesRepository(PlacesNetworkControllerImp(),PlacesPersistencyControllerImp())
 
-    //val places = MutableLiveData<List<PlacesToVisit>>()
-        val places = placesRepository.getAllPlacesList().asLiveData()
+    val places = MutableLiveData<List<PlacesToVisit>>(listOf())
+        //val places = placesRepository.getAllPlacesList().asLiveData()
 
-    fun updatesPlacesForCity(city: String) {
-        //places.postValue(placesRepository.getPlacesByCity(city))
-        placesRepository.getPlacesByCity(city)
+    fun updatesPlacesForCity(cityName: String) {
+        placesRepository.getPlacesByCity(cityName).onEach {
+            places.postValue(it)
+        }.launchIn(CoroutineScope(Dispatchers.IO))
     }
 }

@@ -12,6 +12,6 @@ class PlacesNetworkControllerImp : PlacesNetworkController {
         .create(PlacesAPI::class.java)
 
     override suspend fun getFilteredPlacesToVisit(cityName:String):List<PlacesToVisit> {
-        return retrofit.getFilteredPlaces()
+        return retrofit.getFilteredPlaces(cityName)
     }
 }

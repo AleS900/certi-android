@@ -18,42 +18,24 @@ class PlacesRepository(
 ) {
 
 
-    fun getAllPlacesList(/*context:Context*/):Flow<List<PlacesToVisit>>{
-       return flow{
-           emit(persistency.getPlacesList())
-           try {
-               //if(/*isNetworkConnected(context) */true){
-                   val places= network.getFilteredPlacesToVisit("")
-                   persistency.savePlaces(places)
-                   emit(places)
-           //}
-
-           } catch (e: Exception){
-               Log.e("ERROR",e.message!!)
-           }
-
-       }
-
-    }
-
-    fun getPlacesByCity(cityName: String):List<PlacesToVisit>{
-        return persistency.filterPlacesByCity(cityName)
-    }
 
 
-    fun updatePlaces(cityName: String):Flow<Any>{
-        return flow {
-            emit(persistency.getPlacesList())
+    fun getPlacesByCity(cityName: String):Flow<List<PlacesToVisit>>{
+        return flow{
+            emit(persistency.filterPlacesByCity(cityName))
             try {
-                val placesToVisit = network.getFilteredPlacesToVisit(cityName)
-                persistency.savePlaces(placesToVisit)
-                emit(placesToVisit)
+                //if(/*isNetworkConnected(context) */true){
+                val places= network.getFilteredPlacesToVisit(cityName)
+                persistency.savePlaces(places)
+                emit(places)
+                //}
 
-            } catch (e: Exception) {
+            } catch (e: Exception){
                 Log.e("ERROR",e.message!!)
             }
 
         }
+
     }
 
 }

@@ -24,8 +24,7 @@ class PlacesActivity : AppCompatActivity() {
         city = args.cityInfo
         binding.cityTitle= city
         NetworkUtils.updateIsOnline(this)
-        //placesListViewModel.updatesPlacesForCity(city.nameCity,this)
-        //placesListViewModel.updatesPlacesForCity(city.nameCity)
+        placesListViewModel.updatesPlacesForCity(city.nameCity)
     }
 
 }
