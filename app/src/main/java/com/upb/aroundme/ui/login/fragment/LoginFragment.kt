@@ -5,11 +5,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.upb.aroundme.databinding.FragmentLoginBinding
 
 class LoginFragment: Fragment() {
     private lateinit var binding: FragmentLoginBinding
+    private val loginViewModel: LoginViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -23,8 +25,15 @@ class LoginFragment: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
         binding.buttonNext.setOnClickListener {
-            val goToCitiesListDirections = LoginFragmentDirections.actionLoginFragmentToCitiesActivity()
-            findNavController().navigate(goToCitiesListDirections)
+            val username = binding.email.text.toString()
+            val password = binding.editTextTextPassword.text.toString()
+
+            loginViewModel.login(username,password).invokeOnCompletion {
+                val goToCitiesListDirections = LoginFragmentDirections.actionLoginFragmentToCitiesActivity()
+                findNavController().navigate(goToCitiesListDirections)
+            }
+
+
         }
     }
 }
