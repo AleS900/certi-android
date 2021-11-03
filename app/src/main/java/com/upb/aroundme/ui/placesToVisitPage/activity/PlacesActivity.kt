@@ -3,6 +3,7 @@ package com.upb.aroundme.ui.placesToVisitPage.activity
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+
 import androidx.navigation.navArgs
 import com.upb.aroundme.databinding.ActivityPlacesBinding
 import com.upb.aroundme.model.City
@@ -21,7 +22,7 @@ class PlacesActivity : AppCompatActivity() {
         setContentView(binding.root)
         city = args.cityInfo
         binding.cityTitle= city
-        placesListViewModel.updatesPlacesForCity(city.nameCity)
+        placesListViewModel.updatesPlacesForCity(city.nameCity,this)
     }
 
 }

@@ -8,9 +8,9 @@ import retrofit2.http.POST
 
 
 interface PlacesAPI {
-    @GET("/city")
-    suspend fun getAllPlaces(): List<PlacesToVisit>
+    @GET("/places")
+    suspend fun getFilteredPlaces(): List<PlacesToVisit>
 
-    @POST("/city")
+    @POST("/places")
     suspend fun addNewPost(): List<PlacesToVisit>
 }
