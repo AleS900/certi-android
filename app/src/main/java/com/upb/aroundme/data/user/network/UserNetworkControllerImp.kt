@@ -15,7 +15,7 @@ class UserNetworkControllerImp: UserNetworkController {
     override suspend fun login(username: String, password: String) {
         return client.login(LoginRequest(username,password))
     }
-    override suspend fun register(username: String, password: String) {
-        return client.register(RegisterRequest(username,password))
+    override suspend fun register(username: String, email:String, password: String) {
+        return client.register(RegisterRequest(username,email,password))
     }
 }
