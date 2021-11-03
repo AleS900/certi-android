@@ -1,4 +1,4 @@
-package com.upb.aroundme.ui.selectSession
+package com.upb.aroundme.ui.selectSession.fragment
 
 import androidx.fragment.app.Fragment
 
