@@ -1,22 +1,21 @@
 package com.upb.aroundme.data.Places.persistency
 
+import com.upb.aroundme.App
 import com.upb.aroundme.model.PlacesToVisit
 import kotlinx.coroutines.flow.Flow
 
 class PlacesPersistencyControllerImp:PlacesPersistencyController {
-    private var  PlacesList:List<PlacesToVisit> = listOf()
+    private val db = App.db
 
     override fun getPlacesList(): List<PlacesToVisit> {
-        return PlacesList
+        return db.placesDao().getPlacesList()
     }
 
     override fun savePlaces(places: List<PlacesToVisit>){
-        PlacesList = places
+        db.placesDao().saveSelectPlaces(places)
     }
 
-    override fun filterPlacesByCity(city : String): List<PlacesToVisit>{
-        return PlacesList.filter {
-            it.cityName.toLowerCase().equals(city.toLowerCase())
-        }
+    override fun filterPlacesByCity(cityName : String): List<PlacesToVisit>{
+        return db.placesDao().selectPlaces(cityName)
     }
 }

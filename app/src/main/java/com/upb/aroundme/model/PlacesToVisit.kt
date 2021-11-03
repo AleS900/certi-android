@@ -1,8 +1,11 @@
 package com.upb.aroundme.model
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import java.io.Serializable
 
-data class PlacesToVisit(
+@Entity
+data class PlacesToVisit(@PrimaryKey val id: Int,
     val cityName: String,
     val placeName: String,
     val urlImage : String,
