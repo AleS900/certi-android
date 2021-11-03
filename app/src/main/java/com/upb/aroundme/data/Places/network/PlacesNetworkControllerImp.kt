@@ -6,7 +6,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class PlacesNetworkControllerImp : PlacesNetworkController {
     val retrofit = Retrofit.Builder()
-        .baseUrl("http://192.168.1.20:1880")
+        .baseUrl("http://192.168.0.10:1880")
         .addConverterFactory(GsonConverterFactory.create())
         .build()
         .create(PlacesAPI::class.java)
