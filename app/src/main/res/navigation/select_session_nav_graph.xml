@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/select_session_nav_graph"
+    app:startDestination="@id/selectSessionFragment">
+
+    <fragment
+        android:id="@+id/selectSessionFragment"
+        android:name="com.upb.aroundme.ui.selectSession.SelectSessionFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_select_session">
+
+        <action
+            android:id="@+id/action_selectSessionFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
+        <action
+            android:id="@+id/action_selectSessionFragment_to_registerActivity"
+            app:destination="@id/registerActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.upb.aroundme.ui.login.activity.LoginActivity"
+        android:label="activity_register"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/registerActivity"
+        android:name="com.upb.aroundme.ui.register.activity.RegisterActivity"
+        android:label="activity_register"
+        tools:layout="@layout/activity_register" />
+
+</navigation>
