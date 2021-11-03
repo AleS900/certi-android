@@ -28,7 +28,12 @@ class LoginFragment: Fragment() {
             val username = binding.email.text.toString()
             val password = binding.editTextTextPassword.text.toString()
 
-            loginViewModel.login(username,password).invokeOnCompletion {
+            loginViewModel.login(username,password)
+                .catch{
+                    val goToError = LoginFragmentDirections.actionLoginFragmentToSessionErrorActivity()
+                    findNavController().navigate(goToError)
+                }
+                .invokeOnCompletion {
                 val goToCitiesListDirections = LoginFragmentDirections.actionLoginFragmentToCitiesActivity()
                 findNavController().navigate(goToCitiesListDirections)
             }

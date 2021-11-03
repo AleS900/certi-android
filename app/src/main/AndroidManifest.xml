@@ -26,11 +26,24 @@
         <activity
             android:name=".ui.departmentPage.activity.CitiesActivity"
             android:exported="true"
-            android:parentActivityName=".ui.login.activity.LoginActivity"/>
+            android:parentActivityName=".ui.selectSession.activity.SelectSessionActivity"/>
         <activity
             android:name=".ui.login.activity.LoginActivity"
             android:exported="true"
             android:parentActivityName=".ui.splash.MainActivity"/>
+        <activity
+            android:name=".ui.selectSession.activity.SelectSessionActivity"
+            android:exported="true"
+            android:parentActivityName=".ui.splash.MainActivity"/>
+        <activity
+            android:name=".ui.register.activity.RegisterActivity"
+            android:exported="true"
+            android:parentActivityName=".ui.selectSession.activity.SelectSessionActivity"/>
+        <activity
+            android:name=".ui.sessionError.SessionErrorActivity"
+            android:exported="true"
+            android:parentActivityName=".ui.selectSession.activity.SelectSessionActivity"/>
+
         <activity
             android:name="com.upb.aroundme.ui.splash.MainActivity"
             android:exported="true">
