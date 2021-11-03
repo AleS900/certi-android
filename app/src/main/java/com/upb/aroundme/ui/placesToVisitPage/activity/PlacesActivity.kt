@@ -5,6 +5,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 
 import androidx.navigation.navArgs
+import com.upb.aroundme.NetworkUtils
 import com.upb.aroundme.databinding.ActivityPlacesBinding
 import com.upb.aroundme.model.City
 import com.upb.aroundme.ui.viewmodels.PlacesListViewModel
@@ -22,7 +23,9 @@ class PlacesActivity : AppCompatActivity() {
         setContentView(binding.root)
         city = args.cityInfo
         binding.cityTitle= city
-        placesListViewModel.updatesPlacesForCity(city.nameCity,this)
+        NetworkUtils.updateIsOnline(this)
+        //placesListViewModel.updatesPlacesForCity(city.nameCity,this)
+        //placesListViewModel.updatesPlacesForCity(city.nameCity)
     }
 
 }

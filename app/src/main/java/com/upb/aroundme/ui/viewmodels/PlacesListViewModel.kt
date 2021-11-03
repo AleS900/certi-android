@@ -1,8 +1,10 @@
 package com.upb.aroundme.ui.viewmodels
 
 import android.content.Context
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.asLiveData
 import com.upb.aroundme.data.Places.PlacesRepository
 import com.upb.aroundme.data.Places.network.PlacesNetworkControllerImp
 import com.upb.aroundme.data.Places.persistency.PlacesPersistencyControllerImp
@@ -17,12 +19,11 @@ class PlacesListViewModel: ViewModel() {
     val placesRepository =
         PlacesRepository(PlacesNetworkControllerImp(),PlacesPersistencyControllerImp())
 
-    val places = MutableLiveData<List<PlacesToVisit>>()
+    //val places = MutableLiveData<List<PlacesToVisit>>()
+        val places = placesRepository.getAllPlacesList().asLiveData()
 
-    fun updatesPlacesForCity(city: String ,context:Context) {
-        placesRepository.getAllPlacesList(context).onEach {
-            places.postValue(it)
-        }.launchIn(CoroutineScope(Dispatchers.IO))
-        places.postValue(placesRepository.getPlacesByCity(city))
+    fun updatesPlacesForCity(city: String) {
+        //places.postValue(placesRepository.getPlacesByCity(city))
+        placesRepository.getPlacesByCity(city)
     }
 }

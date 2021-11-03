@@ -18,23 +18,15 @@ class PlacesRepository(
 ) {
 
 
-
-   // ESTE PEX DE ABAJO TIENE QUE ESTAR EN EL getPlaceListForCity, Y LA FUN getAllPlacesList NO ES NECESARIA
-    /*
-    fun getAllPlacesList(context: Context): Flow<List<PlacesToVisit>>{
-        return persistency
-    }
-
-     */
-    fun getAllPlacesList(context:Context):Flow<List<PlacesToVisit>>{
+    fun getAllPlacesList(/*context:Context*/):Flow<List<PlacesToVisit>>{
        return flow{
            emit(persistency.getPlacesList())
            try {
-               if(isNetworkConnected(context) ){
-                   val places= network.getFilteredPlacesToVisit("La Paz")
+               //if(/*isNetworkConnected(context) */true){
+                   val places= network.getFilteredPlacesToVisit("")
                    persistency.savePlaces(places)
                    emit(places)
-           }
+           //}
 
            } catch (e: Exception){
                Log.e("ERROR",e.message!!)
