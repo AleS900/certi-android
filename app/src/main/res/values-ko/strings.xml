@@ -10,4 +10,6 @@
     <string name="accept">수락하다</string>
     <string name="title_departments">당신이 알고 싶은 것이?</string>
     <string name="put_username">User Name</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
 </resources>

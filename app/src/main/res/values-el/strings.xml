@@ -10,4 +10,6 @@
     <string name="accept">Να αποδεχθεί</string>
     <string name="title_departments">Τι θα θέλατε να ξέρετε?</string>
     <string name="put_username">User Name</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
 </resources>

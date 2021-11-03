@@ -10,4 +10,6 @@
     <string name="accept">Accepter</string>
     <string name="title_departments">Que voudriez-vous savoir?</string>
     <string name="put_username">User Name</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
 </resources>

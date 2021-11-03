@@ -10,4 +10,6 @@
     <string name="accept">接受</string>
     <string name="title_departments"> 你想知道什么？</string>
     <string name="put_username">User Name</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
 </resources>

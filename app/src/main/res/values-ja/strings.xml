@@ -10,4 +10,6 @@
     <string name="accept">受け入れるために</string>
     <string name="title_departments">何を知りたいですか？</string>
     <string name="put_username">User Name</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
 </resources>
