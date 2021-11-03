@@ -1,4 +1,4 @@
-package com.upb.aroundme.ui.login.fragment
+package com.upb.aroundme.ui.register.fragment
 
 import androidx.lifecycle.ViewModel
 import com.upb.aroundme.data.user.UserRepository
@@ -11,7 +11,7 @@ import org.koin.java.KoinJavaComponent.inject
 class RegisterViewModel: ViewModel() {
     private val userRepository by inject(UserRepository::class.java)
 
-    fun register(username:String,email:String,password:String): Job {
+    fun register(username:String ,email:String ,password:String): Job {
         return userRepository.register(username,email,password)
             .launchIn(CoroutineScope(Dispatchers.Main))
     }

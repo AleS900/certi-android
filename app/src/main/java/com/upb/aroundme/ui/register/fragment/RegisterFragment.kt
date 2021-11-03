@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.upb.aroundme.databinding.FragmentRegisterBinding
-import com.upb.aroundme.ui.login.fragment.RegisterViewModel
+import com.upb.aroundme.ui.register.fragment.RegisterViewModel
 
 
 class RegisterFragment: Fragment() {
