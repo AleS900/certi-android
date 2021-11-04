@@ -9,5 +9,9 @@
     <string name="put_password">비밀번호</string>
     <string name="accept">수락하다</string>
     <string name="title_departments">당신이 알고 싶은 것이?</string>
-    <string name="put_username">User Name</string>
+    <string name="put_username">사용자 이름</string>
+    <string name="login">로그인</string>
+    <string name="register">등록하다</string>
+    <string name="back">Atrás</string>
+    <string name="error">ERROR Porfavor revise los datos ingresados o pruebe más tarde</string>
 </resources>

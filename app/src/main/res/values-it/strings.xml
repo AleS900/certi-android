@@ -9,5 +9,9 @@
     <string name="put_password">Parola d´ordine</string>
     <string name="accept">Accettare</string>
     <string name="title_departments">Che cosa vorresti sapere?</string>
-    <string name="put_username">User Name</string>
+    <string name="put_username">Nome Utente</string>
+    <string name="login">Login</string>
+    <string name="register">Registrati</string>
+    <string name="back">Atrás</string>
+    <string name="error">ERROR Porfavor revise los datos ingresados o pruebe más tarde</string>
 </resources>

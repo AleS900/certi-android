@@ -15,10 +15,19 @@
         <action
             android:id="@+id/action_loginFragment_to_citiesActivity"
             app:destination="@id/citiesActivity" />
+        <action
+            android:id="@+id/action_loginFragment_to_sessionErrorActivity"
+            app:destination="@id/sessionErrorActivity" />
     </fragment>
     <activity
         android:id="@+id/citiesActivity"
         android:name="com.upb.aroundme.ui.departmentPage.activity.CitiesActivity"
         android:label="activity_city_list"
         tools:layout="@layout/activity_city_list" />
+    <activity
+        android:id="@+id/sessionErrorActivity"
+        android:name="com.upb.aroundme.ui.sessionError.SessionErrorActivity"
+        android:label="SessionErrorActivity"
+        tools:layout="@layout/activity_session_error"/>
+
 </navigation>

@@ -10,5 +10,8 @@
     <string name="put_password">Password</string>
     <string name="accept">Accept</string>
     <string name="title_departments">What would you like to know?</string>
-
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="back">Go Back</string>
+    <string name="error">ERROR Please check the data entered or try later</string>
 </resources>

@@ -10,5 +10,8 @@
     <string name="put_password">Passwort</string>
     <string name="accept">Akzeptieren</string>
     <string name="title_departments">Was würdest du gerne wissen?</string>
-
+    <string name="login">Anmeldung</string>
+    <string name="register">Registrieren</string>
+    <string name="back">Atrás</string>
+    <string name="error">ERROR Porfavor revise los datos ingresados o pruebe más tarde</string>
 </resources>

@@ -6,6 +6,31 @@
     android:layout_height="match_parent"
     android:background="@color/white">
 
+
+    <EditText
+        android:id="@+id/userID"
+        android:layout_width="156dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:ems="10"
+        android:hint="@string/put_username"
+        android:textColor="@color/gray"
+        android:inputType="textPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="@+id/button5"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/button5" />
+
+    <ImageView
+        android:id="@+id/userIDlogo"
+        android:layout_width="35dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/button5"
+        app:layout_constraintStart_toStartOf="@+id/button5"
+        app:layout_constraintTop_toTopOf="@+id/button5"
+        app:srcCompat="@drawable/user" />
+
     <EditText
         android:id="@+id/email"
         android:layout_width="156dp"
@@ -16,18 +41,18 @@
         android:textColor="@color/gray"
         android:inputType="textEmailAddress"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        app:layout_constraintBottom_toBottomOf="@+id/ivEmail"
+        app:layout_constraintBottom_toBottomOf="@+id/button3"
         app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/ivEmail" />
+        app:layout_constraintTop_toTopOf="@+id/button3" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="35dp"
         android:layout_height="38dp"
         android:layout_marginStart="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/ivEmail"
-        app:layout_constraintStart_toStartOf="@+id/ivEmail"
-        app:layout_constraintTop_toTopOf="@+id/ivEmail"
+        app:layout_constraintBottom_toBottomOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="@+id/button3"
+        app:layout_constraintTop_toTopOf="@+id/button3"
         app:srcCompat="@drawable/icons8_email_96" />
 
     <EditText
@@ -39,25 +64,25 @@
         android:hint="@string/put_password"
         android:textColor="@color/gray"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="@+id/ivPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/button4"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toTopOf="@+id/ivPassword" />
+        app:layout_constraintTop_toTopOf="@+id/button4" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="42dp"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/ivPassword"
-        app:layout_constraintStart_toStartOf="@+id/ivPassword"
-        app:layout_constraintTop_toTopOf="@+id/ivPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/button4"
+        app:layout_constraintStart_toStartOf="@+id/button4"
+        app:layout_constraintTop_toTopOf="@+id/button4"
         app:srcCompat="@drawable/icon_password" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="800dp"
         android:layout_height="80dp"
-        app:layout_constraintBottom_toTopOf="@+id/ivEmail"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -65,22 +90,31 @@
         app:srcCompat="@drawable/logos_all" />
 
     <ImageView
-        android:id="@+id/ivPassword"
+        android:id="@+id/button5"
+        android:layout_width="330dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"  />
+
+    <ImageView
+        android:id="@+id/button4"
         android:layout_width="330dp"
         android:layout_height="70dp"
         app:layout_constraintBottom_toTopOf="@+id/button_next"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
 
     <ImageView
-        android:id="@+id/ivEmail"
+        android:id="@+id/button3"
         android:layout_width="330dp"
         android:layout_height="70dp"
-        app:layout_constraintBottom_toTopOf="@+id/ivPassword"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
 
     <Button
         android:id="@+id/button_next"
@@ -95,7 +129,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivPassword"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
         app:strokeColor="@color/black" />
 
 
