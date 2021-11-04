@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/degrading_backround">
+    android:background="@color/white">
 
     <Button
         android:id="@+id/button_register"
         style="?attr/materialButtonOutlinedStyle"
         android:layout_width="152dp"
         android:layout_height="64dp"
-        android:text="@string/accept"
+        android:text="@string/back"
         android:textColor="@color/black"
         app:cornerRadius="30sp"
         app:layout_constraintBottom_toBottomOf="parent"

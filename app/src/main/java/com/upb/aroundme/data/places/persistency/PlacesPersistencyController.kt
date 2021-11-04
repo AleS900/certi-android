@@ -1,7 +1,6 @@
-package com.upb.aroundme.data.Places.persistency
+package com.upb.aroundme.data.places.persistency
 
 import com.upb.aroundme.model.PlacesToVisit
-import kotlinx.coroutines.flow.Flow
 
 interface PlacesPersistencyController {
     fun getPlacesList(): List<PlacesToVisit>

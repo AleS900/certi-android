@@ -1,4 +1,4 @@
-package com.upb.aroundme.ui
+package com.upb.aroundme.ui.adapters
 
 import android.widget.ImageView
 import androidx.databinding.BindingAdapter

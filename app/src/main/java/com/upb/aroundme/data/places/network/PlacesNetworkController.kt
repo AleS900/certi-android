@@ -1,4 +1,4 @@
-package com.upb.aroundme.data.Places.network
+package com.upb.aroundme.data.places.network
 
 import com.upb.aroundme.model.PlacesToVisit
 

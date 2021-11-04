@@ -1,8 +1,6 @@
-package com.upb.aroundme.data.Places.network
+package com.upb.aroundme.data.places.network
 
-import com.upb.aroundme.model.City
 import com.upb.aroundme.model.PlacesToVisit
-import kotlinx.coroutines.flow.Flow
 import retrofit2.http.GET
 import retrofit2.http.POST
 import retrofit2.http.Query

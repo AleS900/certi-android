@@ -1,16 +1,11 @@
-package com.upb.aroundme.data.Places
+package com.upb.aroundme.data.places
 
-import android.content.Context
 import android.util.Log
-import com.upb.aroundme.data.Places.network.PlacesNetworkController
-import com.upb.aroundme.data.Places.network.PlacesNetworkControllerImp
-import com.upb.aroundme.data.Places.persistency.PlacesPersistencyController
-import com.upb.aroundme.data.Places.persistency.PlacesPersistencyControllerImp
-import com.upb.aroundme.isNetworkConnected
+import com.upb.aroundme.data.places.network.PlacesNetworkController
+import com.upb.aroundme.data.places.persistency.PlacesPersistencyController
 import com.upb.aroundme.model.PlacesToVisit
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
-import java.net.ContentHandler
 
 class PlacesRepository(
     private val network: PlacesNetworkController,

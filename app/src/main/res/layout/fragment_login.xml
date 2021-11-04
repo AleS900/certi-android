@@ -12,7 +12,7 @@
         android:layout_height="48dp"
         android:layout_marginStart="32dp"
         android:ems="10"
-        android:hint="@string/put_email"
+        android:hint="@string/put_username"
         android:textColor="@color/gray"
         android:inputType="textEmailAddress"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -28,7 +28,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/ivEmail"
         app:layout_constraintStart_toStartOf="@+id/ivEmail"
         app:layout_constraintTop_toTopOf="@+id/ivEmail"
-        app:srcCompat="@drawable/icons8_email_96" />
+        app:srcCompat="@drawable/user" />
 
     <EditText
         android:id="@+id/editTextTextPassword"

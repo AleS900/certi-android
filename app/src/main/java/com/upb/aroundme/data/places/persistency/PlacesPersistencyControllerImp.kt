@@ -1,8 +1,7 @@
-package com.upb.aroundme.data.Places.persistency
+package com.upb.aroundme.data.places.persistency
 
 import com.upb.aroundme.App
 import com.upb.aroundme.model.PlacesToVisit
-import kotlinx.coroutines.flow.Flow
 
 class PlacesPersistencyControllerImp:PlacesPersistencyController {
     private val db = App.db

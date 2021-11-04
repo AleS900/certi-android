@@ -2,9 +2,9 @@ package com.upb.aroundme.ui.viewmodels
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.upb.aroundme.data.Places.PlacesRepository
-import com.upb.aroundme.data.Places.network.PlacesNetworkControllerImp
-import com.upb.aroundme.data.Places.persistency.PlacesPersistencyControllerImp
+import com.upb.aroundme.data.places.PlacesRepository
+import com.upb.aroundme.data.places.network.PlacesNetworkControllerImp
+import com.upb.aroundme.data.places.persistency.PlacesPersistencyControllerImp
 import com.upb.aroundme.model.PlacesToVisit
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
