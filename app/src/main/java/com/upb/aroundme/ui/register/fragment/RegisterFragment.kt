@@ -8,7 +8,13 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.upb.aroundme.databinding.FragmentRegisterBinding
+import com.upb.aroundme.ui.login.fragment.LoginFragmentDirections
 import com.upb.aroundme.ui.register.fragment.RegisterViewModel
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.catch
+import kotlinx.coroutines.flow.launchIn
+import kotlinx.coroutines.flow.onEach
 
 
 class RegisterFragment: Fragment() {
@@ -31,10 +37,13 @@ class RegisterFragment: Fragment() {
             val email = binding.email.text.toString()
             val password = binding.editTextTextPassword.text.toString()
 
-            registerViewModel.register(username,email,password).invokeOnCompletion {
+            registerViewModel.register(username,email,password).onEach {
                 val goToCitiesListDirectionsRegister = RegisterFragmentDirections.actionRegisterFragmentToCitiesActivity()
                 findNavController().navigate(goToCitiesListDirectionsRegister)
-            }
+            }.catch {
+                val goToErrorPage = RegisterFragmentDirections.actionRegisterFragmentToSessionErrorActivity2()
+                findNavController().navigate(goToErrorPage)
+            }.launchIn(CoroutineScope(Dispatchers.Main))
 
 
         }
