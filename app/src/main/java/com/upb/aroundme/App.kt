@@ -2,10 +2,10 @@ package com.upb.aroundme
 
 import android.app.Application
 import androidx.room.Room
-import com.upb.aroundme.data.databases.AppDatabase
 import com.upb.aroundme.data.user.UserRepository
 import com.upb.aroundme.data.user.network.UserNetworkController
 import com.upb.aroundme.data.user.network.UserNetworkControllerImp
+import com.upb.aroundme.databases.AppDatabase
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
@@ -21,6 +21,7 @@ class App: Application() {
     }
     override fun onCreate() {
         super.onCreate()
+        db= Room.databaseBuilder(this,AppDatabase::class.java,"app-db").build()
 
 
         startKoin{
